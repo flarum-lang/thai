@@ -1,12 +1,12 @@
 {
-	"name": "yourname/flarum-lang-xxish",
+	"name": "flarum-lang/thai",
 	"type": "flarum-extension",
-	"description": "Xxish language pack for Flarum.",
-	"homepage": "https://github.com/yourname/flarum-lang-xxish",
+	"description": "Thai language pack for Flarum.",
+	"homepage": "https://github.com/flarum-lang/thai",
 	"keywords": [
 		"locale",
 		"flarum",
-		"xx-locale"
+		"thai-locale"
 	],
 	"license": "MIT",
 	"authors": [
@@ -17,8 +17,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/yourname/flarum-lang-xxish/issues",
-		"source": "https://github.com/yourname/flarum-lang-xxish"
+		"issues": "https://github.com/flarum-lang/thai/issues",
+		"source": "https://github.com/flarum-lang/thai"
 	},
 	"require": {
 		"flarum/core": "^1.0"
@@ -27,7 +27,7 @@
 	"prefer-stable": true,
 	"extra": {
 		"flarum-extension": {
-			"title": "Xxish",
+			"title": "ภาษาไทย",
 			"icon": {
 				"image": "icon.svg",
 				"backgroundSize": "cover",
@@ -35,8 +35,8 @@
 			}
 		},
 		"flarum-locale": {
-			"code": "xx",
-			"title": "Xxish"
+			 "code": "th",
+                         "title": "ภาษาไทย"
 		},
 		"extiverse": {
 			"discuss": ""
