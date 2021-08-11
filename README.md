@@ -76,6 +76,9 @@ php flarum cache:clear
 
 | Extension | Status |
 | --- | --- |
+| [`fof/pages`](https://github.com/FriendsOfFlarum/pages) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-pages/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-pages/th/) |
+| [`fof/split`](https://github.com/FriendsOfFlarum/split) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-split/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-split/th/) |
+| [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-user-directory/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-user-directory/th/) |
 
 <!-- fof-extensions-list-stop -->
 
@@ -86,6 +89,7 @@ php flarum cache:clear
 
 | Extension | Status |
 | --- | --- |
+| [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/acpl-mobile-tab/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-mobile-tab/th/) |
 
 <!-- various-extensions-list-stop -->
 
