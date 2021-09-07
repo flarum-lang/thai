@@ -41,7 +41,7 @@ core:
       slug_driver_text: กรุณาเลือกชุดปฏิบัติงานเพื่อจะใช้คำเเสลงสำหรับโมดูลนี้
       title: พื้นฐาน
       welcome_banner_heading: แบรนเนอร์ต้อนรับ
-      welcome_banner_text: 'ตั้งค่าข้อคสามที่จะเเสดงในเเบรนเนอร์ที่หน้าการสนทนาทั้งหมด ใช้นี่เพื่อเเสดงข้อความต้อนรับสำหรับผู้เยี่ยมชมพอรั่มของคุณ'
+      welcome_banner_text: 'ตั้งค่าข้อความที่จะเเสดงในเเบรนเนอร์ที่หน้ากระทู้ทั้งหมด ใช้นี่เพื่อเเสดงข้อความต้อนรับสำหรับผู้เยี่ยมชมพอรั่มของคุณ'
     dashboard:
       clear_cache_button: ล้างเเคช
       description: 'Your forum at a glance.'
@@ -453,7 +453,7 @@ core:
     username:
       deleted_text: '[deleted]'
   ref:
-    all_discussions: การสนทนาทั้งหมด
+    all_discussions: กระทู้ทั้งหมด
     change_email: เปลี่ยนอีเมล
     change_password: เปลี่ยนรหัสผ่าน
     color: สี
@@ -466,7 +466,7 @@ core:
     custom_header_title: เเก้ไขส่วนหัวที่กำหนดเอง
     delete: ลบ
     delete_forever: ลบอย่างถาวร
-    discussions: การสนทนา
+    discussions: กระทู้
     edit: แก้ไข
     edit_user: เเก้ไขผู้ใช้
     email: อีเมล
@@ -502,6 +502,7 @@ core:
   views:
     admin:
       extensions:
+        caption: '=> core.ref.extensions'
         disable: ปิดการใช้งาน
         empty: ไม่มีส่วนขยายที่ติดตั้ง
         enable: เปิดใช้งาน
