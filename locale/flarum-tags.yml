@@ -29,7 +29,7 @@ flarum-tags:
       tag_discussions_label: ติดแท็กกระทู้
     tag_settings:
       range_separator_text: ' ถึง '
-      required_primary_heading: จำนวนแท็กหลักที่ต้องการ
+      required_primary_heading: จำนวนแท็กหลักที่จำเป็นต้องใส่ในกระทู้
       required_primary_text: กรุณาระบุจำนวนขั้นต่ำเเละสูงสุดของเเท็กหลักที่สามารถใส่ในกระทู้ได้
       required_secondary_heading: จำนวนเเท็กรองที่จำเป็นต้องใส่ในกระทู้
       required_secondary_text: กรุณาระบุจำนวนขั้นต่ำเเละสูงสุดที่สามารถใช้เเท็กรองในกระทู้
@@ -38,16 +38,16 @@ flarum-tags:
       about_tags_text: 'แท็กใช้เพื่อจัดหมวดหมู่ของกระทู้ แท็กหลักก็เหมือนกับหมวดหมู่ฟอรัมทั่วไป โดยสามารถจัดเรียงเป็นลำดับชั้นสองระดับได้ แท็กรองไม่มีลำดับชั้นหรือลำดับ และมีประโยชน์สำหรับการจัดหมวดหมู่ย่อย'
       create_primary_tag_button: สร้างเเท็กหลัก
       create_secondary_tag_button: สร้างเเท็กรอง
-      primary_heading: 'Primary Tags'
-      secondary_heading: 'Secondary Tags'
-      settings_heading: Settings
+      primary_heading: เเท็กหลัก
+      secondary_heading: เเท็กรอง
+      settings_heading: การตั้งค่า
   forum:
     all_tags:
       meta_description_text: แท็กทั้งหมด
       meta_title_text: '=> flarum-tags.ref.tags'
     choose_tags:
-      choose_primary_placeholder: '{count, plural, one {เลือกแท็กหลัก} other {เลือก # แท็กหลัก}}'
-      choose_secondary_placeholder: '{count, plural, one {เลือกอย่างน้อย 1 แท็ก} other {เลือกอย่างน้อย # แท็ก}}'
+      choose_primary_placeholder: '{count, plural, one {Choose a primary tag} other {Choose # primary tags}}'
+      choose_secondary_placeholder: '{count, plural, one {Choose 1 more tag} other {Choose # more tags}}'
       edit_title: 'แก้ไขแท็กสำหรับ {title}'
       submit_button: '=> core.ref.okay'
       title: เลือกแท็กสำหรับกระทู้ของคุณ
@@ -62,12 +62,12 @@ flarum-tags:
       tags_link: '=> flarum-tags.ref.tags'
       untagged_link: ไม่ได้ติดแท็ก
     post_stream:
-      added_and_removed_tags_text: '{username} added the {tagsAdded} and removed the {tagsRemoved}.'
-      added_tags_text: '{username} added the {tagsAdded}.'
-      removed_tags_text: '{username} removed the {tagsRemoved}.'
+      added_and_removed_tags_text: '{username} ได้เพิ่มเเท็ก {tagsAdded} เเละลบเเท็ก {tagsRemoved}.'
+      added_tags_text: '{username} ได้เพิ่มเเท็ก {tagsAdded}.'
+      removed_tags_text: '{username} ได้ลบเเท็ก {tagsRemoved}.'
       tags_text: '{count, plural, one {{tags} tag} other {{tags} tags}}'
     tag:
-      meta_description_text: 'All discussions with the {tag} tag'
+      meta_description_text: 'กระทู้ทั้งหมดในเเท็ก {tag}'
   lib:
     deleted_tag_text: ถูกลบแล้ว
   ref:
