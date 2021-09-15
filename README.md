@@ -85,6 +85,7 @@ php flarum cache:clear
 | [`fof/sentry`](https://github.com/FriendsOfFlarum/sentry) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-sentry/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-sentry/th/) |
 | [`fof/socialprofile`](https://github.com/FriendsOfFlarum/socialprofile) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-socialprofile/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-socialprofile/th/) |
 | [`fof/split`](https://github.com/FriendsOfFlarum/split) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-split/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-split/th/) |
+| [`fof/subscribed`](https://github.com/FriendsOfFlarum/subscribed) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-subscribed/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-subscribed/th/) |
 | [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-user-bio/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-user-bio/th/) |
 | [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-user-directory/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-user-directory/th/) |
 | [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/fof-username-request/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/fof-username-request/th/) |
@@ -99,6 +100,7 @@ php flarum cache:clear
 | Extension | Status |
 | --- | --- |
 | [`acpl/mobile-tab`](https://github.com/android-com-pl/mobile-tab) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/acpl-mobile-tab/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-mobile-tab/th/) |
+| [`acpl/my-tags`](https://github.com/android-com-pl/my-tags) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/acpl-my-tags/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/acpl-my-tags/th/) |
 | [`afrux/forum-stats-widget`](https://github.com/afrux/forum-stats-widget) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/afrux-forum-stats-widget/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/afrux-forum-stats-widget/th/) |
 | [`afrux/forum-widgets-core`](https://github.com/afrux/forum-widgets-core) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/afrux-forum-widgets-core/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/afrux-forum-widgets-core/th/) |
 | [`afrux/news-widget`](https://github.com/afrux/news-widget) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/afrux-news-widget/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/afrux-news-widget/th/) |
