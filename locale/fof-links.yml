@@ -11,7 +11,7 @@ fof-links:
       guests-label: ผู้มาเยือน
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
-      internal_link: 'มันเป็นลิ้งภายนอกไหม?'
+      internal_link: 'มันเป็นลิ้งภายในไหม?'
       members-label: ผู้ใช้ที่ลงทะเบียน
       open_newtab: เปิดลิ้งในเเท็บใหม่
       submit_button: '=> core.ref.save_changes'
