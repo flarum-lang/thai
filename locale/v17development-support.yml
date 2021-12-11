@@ -185,7 +185,7 @@ v17development-flarum-support:
           language:
             any: ทุกภาษา
           status:
-            filter_count: '{count, plural, one {# filter} other {# filters}}'
+            filter_count: '{count, plural, one {# ตัวกรอง} อื่นๆ อีก {# ตัวกรอง}}'
             title: สถานะตั๋ว
         no_tickets: 'ไม่มีตั๋วที่ตรงกับเกณฑ์ของคุณ เป็นไปได้ว่าคุณทำได้ดีมาก!'
         refresh: รีเฟรช
