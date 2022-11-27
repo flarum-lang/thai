@@ -95,7 +95,6 @@ core:
       title: '=> core.ref.email'
     extension:
       configure_scopes: กำหนดขอบเขต
-      confirm_uninstall: 'กำลังถอนการติดตั้งทั้งฐานข้อมูลเเละข้อมูลอื่นๆ รวมถึงส่วนเสริมคุณเเน่ใจไหม?'
       disabled: ปิดใช้งาน
       enable_to_see: เปิดใช้งานส่วนเสริมเพื่อดูเเละเเก้ไขการตั้งค่า
       enabled: เปิดใช้งาน
@@ -110,7 +109,6 @@ core:
       no_settings: ส่วนเสริมนี้ไม่มีการตั้งค่า
       open_modal: เปิดการตั้งค่า
       permissions_title: การอนุญาติ
-      uninstall_button: ถอนการติดตั้ง
     header:
       get_help: รับความช่วยเหลือ
       log_out_button: '=> core.ref.log_out'
@@ -278,7 +276,6 @@ core:
     discussion_list:
       empty_text: ดูเหมือนว่าไม่มีกระทู้ที่นี่
       load_more_button: '=> core.ref.load_more'
-      mark_as_read_tooltip: ทำเครื่องหมายว่าอ่านแล้ว
       replied_text: '{username} ตอบกลับเมื่อ {ago}'
       started_text: '{username} ตั้งกระทู้เมื่อ {ago}'
     forgot_password:

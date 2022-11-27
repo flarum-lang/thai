@@ -4,8 +4,6 @@
 
 fof-subscribed:
   admin:
-    menu:
-      description: 'กำหนดค่า (ค่าเริ่มต้น) การรับสมัครสมาชิกสมาชิก'
     permission:
       subscribe_to_discussion_created: อนุญาติให้รับการเเจ้งเตือนเมื่อมรกระทู้ใหม่
       subscribe_to_post_unapproved: อนุญาตเให้รับการเเจ้งเตือนเมื่อมีโพสต์ที่ยังไม่ได้อนุมัติ

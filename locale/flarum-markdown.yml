@@ -3,7 +3,7 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-markdown:
-  forum:
+  lib:
     composer:
       bold_tooltip: เพิ่มตัวหนา
       code_tooltip: ใส่โค้ด
