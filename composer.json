@@ -6,7 +6,7 @@
     "keywords": [
         "locale",
         "flarum",
-        "thai-locale"
+        "th-locale"
     ],
     "license": "MIT",
     "authors": [
@@ -27,13 +27,8 @@
     "prefer-stable": true,
     "extra": {
         "flarum-extension": {
-            "title": "ภาษาไทย",
+            "title": "Thai",
             "category": "language",
-            "info": {
-                "donate": "https://flarum.org/donate/",
-                "website": "https://flarum.org",
-                "support": "https://discuss.flarum.org"
-            },
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#00247d",
