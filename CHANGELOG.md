@@ -24,6 +24,7 @@ CHANGELOG
 * [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget)
 * [`antoinefr/flarum-ext-online`](https://github.com/AntoineFr/flarum-ext-online)
 * [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series)
+* [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories)
 * [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings)
 * [`clarkwinkelmann/flarum-ext-status`](https://github.com/clarkwinkelmann/flarum-ext-status)
 * [`flarum/akismet`](https://github.com/flarum/akismet)
@@ -61,6 +62,7 @@ CHANGELOG
 * [`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions)
 * [`katosdev/signature`](https://github.com/katosdev/signature)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
+* [`v17development/flarum-blog`](https://github.com/v17development/flarum-blog)
 * [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
 
 
