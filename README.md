@@ -116,10 +116,12 @@ php flarum cache:clear
 | [`afrux/top-posters-widget`](https://github.com/afrux/top-posters-widget) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/afrux-top-posters-widget/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/afrux-top-posters-widget/th/) |
 | [`antoinefr/flarum-ext-online`](https://github.com/AntoineFr/flarum-ext-online) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/antoinefr-online/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/antoinefr-online/th/) |
 | [`askvortsov/flarum-article-series`](https://github.com/askvortsov1/flarum-article-series) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/askvortsov-article-series/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-article-series/th/) |
+| [`askvortsov/flarum-categories`](https://github.com/askvortsov1/flarum-categories) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/askvortsov-categories/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-categories/th/) |
 | [`askvortsov/flarum-moderator-warnings`](https://github.com/askvortsov1/flarum-moderator-warnings) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/askvortsov-moderator-warnings/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/askvortsov-moderator-warnings/th/) |
 | [`clarkwinkelmann/flarum-ext-status`](https://github.com/clarkwinkelmann/flarum-ext-status) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/clarkwinkelmann-status/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/clarkwinkelmann-status/th/) |
 | [`katosdev/signature`](https://github.com/katosdev/signature) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/katosdev-signature/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/katosdev-signature/th/) |
 | [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/michaelbelgium-discussion-views/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/michaelbelgium-discussion-views/th/) |
+| [`v17development/flarum-blog`](https://github.com/v17development/flarum-blog) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/v17development-blog/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/v17development-blog/th/) |
 
 <!-- various-extensions-list-stop -->
 
