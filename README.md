@@ -132,8 +132,8 @@ php flarum cache:clear
 
 | Extension | Status |
 | --- | --- |
-| [`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/justoverclock-related-discussions/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/justoverclock-related-discussions/th/) |
-| [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/v17development-support/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/v17development-support/th/) |
+| [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/justoverclock-related-discussions/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/justoverclock-related-discussions/th/) |
+| [`v17development/flarum-support`](https://flarum.org/extension/v17development/flarum-support) | [![Translation status](https://weblate.rob006.net/widgets/flarum/th/v17development-support/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/v17development-support/th/) |
 
 <!-- premium-extensions-list-stop -->
 
