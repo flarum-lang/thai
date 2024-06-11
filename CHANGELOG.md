@@ -59,10 +59,10 @@ CHANGELOG
 * [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio)
 * [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)
 * [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request)
-* [`justoverclock/related-discussions`](https://extiverse.com/extension/justoverclock/related-discussions)
+* [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions)
 * [`katosdev/signature`](https://github.com/katosdev/signature)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
 * [`v17development/flarum-blog`](https://github.com/v17development/flarum-blog)
-* [`v17development/flarum-support`](https://extiverse.com/extension/v17development/flarum-support)
+* [`v17development/flarum-support`](https://flarum.org/extension/v17development/flarum-support)
 
 
