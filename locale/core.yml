@@ -14,6 +14,7 @@ core:
       custom_footer_text: '=> core.ref.custom_footer_text'
       custom_header_heading: ส่วนหัวแบบกำหนดเอง
       custom_header_text: '=> core.ref.custom_header_text'
+      custom_styles_cannot_use_less_features: 'คุณสมบัติ @import และ data-uri ไม่อนุญาตให้ใช้ใน LESS แบบกำหนดเอง'
       custom_styles_heading: กำหนดสไตล์เอง
       custom_styles_text: 'ปรับเเต่งฟอรั่มของคุณเองโดยการใช้ CSS/Less เพื่อปรากฎทับค่าเริ่มต้น'
       dark_mode_label: ธีมมืด
@@ -44,11 +45,33 @@ core:
       title: พื้นฐาน
       welcome_banner_heading: แบรนเนอร์ต้อนรับ
       welcome_banner_text: 'ตั้งค่าข้อความที่จะเเสดงในเเบรนเนอร์ที่หน้ากระทู้ทั้งหมด ใช้นี่เพื่อเเสดงข้อความต้อนรับสำหรับผู้เยี่ยมชมพอรั่มของคุณ'
+    create_user:
+      email_confirmed_label: ต้องการให้ผู้ใช้ยืนยันอีเมลนี้
+      email_placeholder: '=> core.ref.email'
+      password_placeholder: '=> core.ref.password'
+      submit_and_create_another_button: สร้างและเพิ่มอีก
+      submit_button: สร้างผู้ใช้
+      title: สร้างผู้ใช้ใหม่
+      use_random_password: สร้างรหัสผ่านแบบสุ่ม
+      username_placeholder: '=> core.ref.username'
     dashboard:
       clear_cache_button: ล้างเเคช
       description: 'Your forum at a glance.'
+      io_error_message: 'ไม่สามารถเขียนลงระบบไฟล์ได้ โปรดตรวจสอบสิทธิ์ของระบบไฟล์ของคุณแล้วลองอีกครั้ง หรือลองเรียกใช้จากหน้าต่างคำสั่ง'
+      status:
+        headers:
+          queue-driver: ไดร์เวอร์คิว
+          scheduler-status: ตารางเวลา
+          session-driver: ไดร์เวอร์เซสชั่น
+        scheduler:
+          active: ใช้งาน
+          inactive: ไม่ใช้งาน
+          never-run: ไม่เคยทำงาน
       title: Dashboard
       tools_button: Tools
+    debug-warning:
+      detail: "เมื่อโหมด <code>debug</code> ทำงานอยู่ Flarum จะสร้างทรัพยากร <code>JavaScript</code> และ <code>CSS</code> ใหม่ทุกครั้งที่มีการร้องขอ และข้อมูลอื่น ๆ อาจรั่วไหลได้ เช่น ความลับของฐานข้อมูล ตัวแปรสภาพแวดล้อม เป็นต้น\n\nขอแนะนำอย่างยิ่งให้ปิดใช้งาน <code>debug</code> ในไฟล์ <code>config.php</code> ของคุณในการใช้งานจริง ดู <link>เอกสารของ Flarum</link> เพื่อดูข้อมูลเพิ่มเติม\n"
+      label: ใช้งานโหมดดีบั๊ก
     edit_css:
       customize_text: 'Customize your forum''s appearance by adding your own Less/CSS code to be applied on top of Flarum''s <a>default styles</a>.'
       submit_button: '=> core.ref.save_changes'
@@ -97,6 +120,7 @@ core:
       title: '=> core.ref.email'
     extension:
       configure_scopes: กำหนดขอบเขต
+      confirm_purge: 'การล้างข้อมูลจะลบรายการฐานข้อมูลและทรัพยากรทั้งหมดที่เกี่ยวข้องกับส่วนขยาย แต่จะไม่ถอนการติดตั้งส่วนขยาย ซึ่งต้องทำผ่าน Composer คุณต้องการดำเนินการต่อหรือไม่?'
       disabled: ปิดใช้งาน
       enable_to_see: เปิดใช้งานส่วนเสริมเพื่อดูเเละเเก้ไขการตั้งค่า
       enabled: เปิดใช้งาน
@@ -111,6 +135,11 @@ core:
       no_settings: ส่วนเสริมนี้ไม่มีการตั้งค่า
       open_modal: เปิดการตั้งค่า
       permissions_title: การอนุญาติ
+      purge_button: ล้าง
+      readme:
+        button_label: README
+        no_readme: 'ส่วนขยายนี้ไม่มีไฟล์ README'
+        title: 'เอกสารประกอบ {extName}'
     header:
       get_help: รับความช่วยเหลือ
       log_out_button: '=> core.ref.log_out'
@@ -141,8 +170,10 @@ core:
       userlist_button: '=> core.admin.users.title'
       userlist_title: '=> core.admin.users.description'
     permissions:
+      allow_hide_own_posts_label: อนุญาตให้ลบโพสต์ของตัวเอง
       allow_post_editing_label: อนุญาติเเก้ไขโพสต์
       allow_renaming_label: อนุญาติเปลี่ยนชื่อกระทู้
+      create_access_token_label: สร้างโทเค็นการเข้าถึง
       create_heading: สร้าง
       delete_discussions_forever_label: ลบกระทู้ถาวร
       delete_discussions_label: ลบกระทู้
@@ -154,6 +185,7 @@ core:
       edit_users_groups_label: เเก้ไขกลุ่มผู้ใช้
       edit_users_label: เเก้ไขค่าของผู้ใช้
       global_heading: ทั้งหมด
+      moderate_access_tokens_label: โทเค็นการเข้าถึงแบบปานกลาง
       moderate_heading: การดูเเล
       new_group_button: กลุ่มใหม่
       participate_heading: การมีส่วนร่วม
@@ -171,6 +203,7 @@ core:
       view_post_ips_label: ดูที่อยู่ไอพีของโพสต์
     permissions_controls:
       allow_indefinitely_button: ตลอดการ
+      allow_never_button: '=> core.ref.never'
       allow_some_minutes_button: '{count, plural, one {สำหรับ # minute} เเละอื่นๆ {สำหรับ # minutes}}'
       allow_ten_minutes_button: 'ใน 10 นาที'
       allow_until_reply_button: จนกว่าจะมีการตอบกลับ
@@ -185,9 +218,12 @@ core:
       remove_button: '=> core.ref.remove'
       upload_button: เลือกรูปภาพ…
     users:
+      create_user_button: ผู้ใช้ใหม่
       description: รายชื่อผู้ใช้ทั้งหมดในฟอรั่มของคุณ
       grid:
         columns:
+          display_name:
+            title: ชื่อที่แสดง
           edit_user:
             button: '=> core.ref.edit'
             title: '=> core.ref.edit_user'
@@ -201,6 +237,8 @@ core:
             title: กลุ่ม
           join_time:
             title: เข้าร่วมเมื่อ
+          user_actions:
+            title: การกระทำ
           user_id:
             title: ไอดี
           username:
@@ -209,8 +247,12 @@ core:
         invalid_column_content: ไม่ถูกต้อง
       pagination:
         back_button: หน้าก่อนหน้า
+        first_button: ไปที่หน้าแรก
+        go_to_page_textbox_a11y_label: ไปที่เลขหน้าโดยตรง
+        last_button: ไปยังหน้าสุดท้าย
         next_button: หน้าถัดไป
         page_counter: 'หน้าที่ {current} จาก {total}'
+      search_placeholder: '=> core.ref.search_users'
       title: '=> core.ref.users'
       total_users: 'ผู้ใช้ทั้งหมด: {count}'
   api:
@@ -280,6 +322,8 @@ core:
       load_more_button: '=> core.ref.load_more'
       replied_text: '{username} ตอบกลับเมื่อ {ago}'
       started_text: '{username} ตั้งกระทู้เมื่อ {ago}'
+      total_replies_a11y_label: '{count, plural, one {# reply} other {# replies}}'
+      unread_replies_a11y_label: '{count, plural, one {# unread reply} other {# unread replies}} ทำเครื่องหมาย {count, plural, one {reply} other {replies}} ที่ยังไม่อ่านเป็นอ่านแล้ว'
     forgot_password:
       dismiss_button: '=> core.ref.okay'
       email_placeholder: '=> core.ref.email'
@@ -295,7 +339,9 @@ core:
       log_in_link: '=> core.ref.log_in'
       log_out_button: '=> core.ref.log_out'
       profile_button: โปรไฟล์
+      search_clear_button_accessible_label: ล้างคำค้นหา
       search_placeholder: ค้นหา
+      search_role_label: ค้นหาฟอรั่ม
       session_dropdown_accessible_label: 'Toggle session options dropdown menu'
       settings_button: '=> core.ref.settings'
       sign_up_link: '=> core.ref.sign_up'
@@ -325,6 +371,8 @@ core:
       title: '=> core.ref.log_in'
       username_or_email_placeholder: ชื่อผู้ใช้หรืออีเมล
     notifications:
+      delete_all_confirm: 'คุณต้องการลบการแจ้งเตือนทั้งหมดหรือไม่? การกระทำนี้ย้อนกลับไม่ได้'
+      delete_all_tooltip: ลบการแจ้งเตือนทั้งหมด
       discussion_renamed_text: '{username} ได้ทำการเปลี่ยนชื่อ'
       empty_text: ไม่มีการแจ้งเตือน
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
@@ -362,6 +410,26 @@ core:
       all_discussions_button: 'ค้นหาทุกกระทู้ด้วย "{query}"'
       discussions_heading: '=> core.ref.discussions'
       users_heading: '=> core.ref.users'
+    security:
+      browser_on_operating_system: '{browser} บน {os}'
+      cannot_terminate_current_session: 'ไม่สามารถยุติเซสชันที่ใช้งานอยู่ในปัจจุบันได้ กรุณาออกจากระบบแทน'
+      created: สร้างเมื่อ
+      current_active_session: เซสชั่นที่ใช้งานอยู่ปัจจุบัน
+      developer_tokens_heading: โทเค็นของผู้พัฒนา
+      empty_text: ดูเหมือนว่าจะไม่มีอะไรให้ดูที่นี่
+      global_logout:
+        heading: ออกจากระบบทั้งหมด
+        help_text: 'ล้างเซสชั่นคุกกี้ในปัจจุบัน ยุติเซสชั่นทั้งหมด เพิกถอนโทเค็นของนักพัฒนา และทำให้การยืนยันอีเมลหรือการรีเซ็ตรหัสผ่านอีเมลใด ๆ เป็นโมฆะ'
+        log_out_button: '=> core.ref.log_out'
+      hide_access_token: ซ่อนโทเค็น
+      last_activity: กิจกรรมล่าสุด
+      never: '=> core.ref.never'
+      new_access_token_button: '=> core.ref.new_token'
+      new_access_token_modal:
+        submit_button: สร้างโทเค็น
+        title: '=> core.ref.new_token'
+        title_placeholder: หัวเรื่อง
+      revoke_access_token: เพิกถอน
     settings:
       account_heading: บัญชี
       change_email_button: '=> core.ref.change_email'
