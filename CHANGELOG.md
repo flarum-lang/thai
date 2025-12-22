@@ -47,6 +47,7 @@ CHANGELOG
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language)
 * [`fof/disposable-emails`](https://github.com/FriendsOfFlarum/disposable-emails)
 * [`fof/links`](https://github.com/FriendsOfFlarum/links)
+* [`fof/moderator-warnings`](https://github.com/FriendsOfFlarum/moderator-warnings)
 * [`fof/pages`](https://github.com/FriendsOfFlarum/pages)
 * [`fof/prevent-necrobumping`](https://github.com/FriendsOfFlarum/prevent-necrobumping)
 * [`fof/reactions`](https://github.com/FriendsOfFlarum/reactions)
