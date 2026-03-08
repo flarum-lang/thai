@@ -21,7 +21,7 @@
         "source": "https://github.com/flarum-lang/thai"
     },
     "require": {
-        "flarum/core": "^1.0"
+        "flarum/core": "^2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
