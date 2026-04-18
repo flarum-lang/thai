@@ -19,7 +19,7 @@ This language pack contains Thai translations for Flarum (compatible with `1.0.0
 You can install language pack using [Composer](https://getcomposer.org/):
 
 ```console
-composer require flarum-lang/thai:dev-master
+composer require "flarum-lang/thai:@dev"
 ```
 
 Then enable extension in admin panel of your Flarum.
