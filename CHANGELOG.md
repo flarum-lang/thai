@@ -45,6 +45,7 @@ CHANGELOG
 * [`fof/user-bio`](https://github.com/FriendsOfFlarum/user-bio)
 * [`fof/user-directory`](https://github.com/FriendsOfFlarum/user-directory)
 * [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request)
+* [`ianm/syndication`](https://github.com/imorland/syndication)
 * [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions)
 
 
