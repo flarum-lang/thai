@@ -47,5 +47,6 @@ CHANGELOG
 * [`fof/username-request`](https://github.com/FriendsOfFlarum/username-request)
 * [`ianm/syndication`](https://github.com/imorland/syndication)
 * [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions)
+* [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
 
 
