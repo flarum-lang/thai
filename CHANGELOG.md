@@ -65,7 +65,7 @@ CHANGELOG
 * [`justoverclock/related-discussions`](https://flarum.org/extension/justoverclock/related-discussions)
 * [`katosdev/signature`](https://github.com/katosdev/signature)
 * [`michaelbelgium/flarum-discussion-views`](https://github.com/MichaelBelgium/flarum-discussion-views)
-* [`v17development/flarum-blog`](https://github.com/v17development/flarum-blog)
+* [`v17development/flarum-blog`](https://github.com/FriendsOfFlarum/blog)
 * [`v17development/flarum-support`](https://flarum.org/extension/v17development/flarum-support)
 
 
