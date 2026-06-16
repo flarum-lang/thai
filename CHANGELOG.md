@@ -43,6 +43,7 @@ CHANGELOG
 * [`flarum/suspend`](https://github.com/flarum/suspend)
 * [`flarum/tags`](https://github.com/flarum/tags)
 * [`fof/best-answer`](https://github.com/FriendsOfFlarum/best-answer)
+* [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/custom-footer`](https://github.com/FriendsOfFlarum/custom-footer)
 * [`fof/discussion-language`](https://github.com/FriendsOfFlarum/discussion-language)
 * [`fof/disposable-emails`](https://github.com/FriendsOfFlarum/disposable-emails)
