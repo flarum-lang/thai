@@ -5,7 +5,7 @@
 afrux-online-users-widget:
   admin:
     settings:
-      max_users: ผู้ใช้สูงสุดที่โชว์ได้
+      max_users: จำนวนผู้ใช้สูงสุดที่แสดงได้
   forum:
     widget:
       empty: ไม่มีผู้ใช้ออนไลน์ในขณะนี้

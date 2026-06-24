@@ -7,7 +7,7 @@ ianm-syndication:
     settings:
       entries-count: 'จำนวนรายการต่อฟีด?'
       forum-icons:
-        help: แสดงไอคอนในทุกการสนทนาและแท็กเพื่อให้เข้าถึงฟีดได้ง่ายขึ้น
+        help: แสดงไอคอนในทุกโพสต์และแท็กเพื่อให้เข้าถึงฟีดได้ง่ายขึ้น
         label: 'แสดงลิงก์ฟีด Atom/RSS บนฟอรั่ม'
       forum-link-format:
         help: 'เลือกรูปแบบ (Atom หรือ RSS) ที่จะใช้ลิงก์เมื่อแสดงบนฟอรั่ม'
@@ -20,11 +20,11 @@ ianm-syndication:
         label: การจัดรูปแบบฟีด
   forum:
     autodiscovery:
-      discussion_last_posts: การสนทนานี้
+      discussion_last_posts: โพสต์นี้
       forum_activity: กิจกรรมในฟอรั่ม
-      forum_new_discussions: การสนทนาใหม่ของฟอรั่ม
+      forum_new_discussions: โพสต์ใหม่ของฟอรั่ม
       tag_activity: 'กิจกรรมสำหรับแท็ก {tag}'
-      tag_new_discussions: 'การสนทนาในแท็ก {tag}'
+      tag_new_discussions: 'โพสต์ในแท็ก {tag}'
       user_last_posts: 'โพสต์ & ความคิดเห็นโดยผู้ใช้นี้'
     discussion:
       feed_link: ฟีด
@@ -33,14 +33,14 @@ ianm-syndication:
         user_posts:
           title_reply: 'ตอบกลับ: {discussion}'
       titles:
-        discussion_subtitle: ข้อความล่าสุดในการสนทนานี้
+        discussion_subtitle: ข้อความล่าสุดในโพสต์นี้
         discussion_title: '{discussion_name}'
-        main_d_subtitle: การสนทนาใหม่ล่าสุดในฟอรั่ม
-        main_d_title: 'การสนทนาใหม่ใน {forum_name}'
+        main_d_subtitle: โพสต์ใหม่ล่าสุดในฟอรั่ม
+        main_d_title: 'โพสต์ใหม่ใน {forum_name}'
         main_subtitle: โพสต์ล่าสุดในฟอรั่ม
         main_title: '{forum_name}'
-        tag_d_subtitle: 'การสนทนาใหม่ล่าสุดในแท็ก {tag}'
-        tag_d_title: 'การสนทนาใหม่ในแท็ก {tag}'
+        tag_d_subtitle: 'โพสต์ใหม่ล่าสุดในแท็ก {tag}'
+        tag_d_title: 'โพสต์ใหม่ในแท็ก {tag}'
         tag_subtitle: 'โพสต์ล่าสุดในแท็ก {tag}'
         tag_title: 'กิจกรรมในแท็ก {tag}'
         user_subtitle: 'โพสต์ & ความคิดเห็นล่าสุดโดยผู้ใช้นี้'

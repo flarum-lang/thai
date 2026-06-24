@@ -6,8 +6,8 @@ flarum-approval:
   admin:
     permissions:
       approve_posts_label: อนุมัติโพสต์
-      reply_without_approval_label: ตอบกลับการสนทนานี้โดยไม่ต้องอนุมัติ
-      start_discussions_without_approval_label: เริ่มการสนทนาโดยไม่ต้องอนุมัติ
+      reply_without_approval_label: ตอบกลับโพสต์นี้โดยไม่ต้องอนุมัติ
+      start_discussions_without_approval_label: เริ่มโพสต์โดยไม่ต้องอนุมัติ
   forum:
     badge:
       awaiting_approval_tooltip: '=> flarum-approval.ref.awaiting_approval'
