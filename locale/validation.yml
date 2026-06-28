@@ -3,7 +3,32 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 validation:
+  attributes:
+    content: เนื้อหา
+    email: อีเมล
+    name_plural: ชื่อพหูพจน์
+    name_singular: ชื่อเอกพจน์
+    password: รหัสผ่าน
+    tag_count_primary: จำนวนแท็กหลัก
+    tag_count_secondary: จำนวนแท็กรอง
+    title: ชื่อเรื่อง
+    username: ชื่อผู้ใช้
   boolean: ':attribute ต้องเป็นจริงหรือเท็จเท่านั้น'
-  distinct: ':attribute มีค่าที่ซ้ำกัน'
-  exists: ':attribute ที่เลือกนั้นไม่ถูกต้อง'
+  distinct: ':attribute มีค่าซ้ำกัน'
+  exists: ':attribute ที่เลือกไม่ถูกต้อง'
   filled: ':attribute ต้องมีค่า'
+  in: ':attribute ที่เลือกไม่ถูกต้อง'
+  not_in: ':attribute ที่เลือกไม่ถูกต้อง'
+  present: 'ต้องมีฟิลด์ :attribute'
+  prohibited: 'ไม่อนุญาตให้กรอกฟิลด์ :attribute'
+  prohibited_if: 'ไม่อนุญาตให้กรอกฟิลด์ :attribute เมื่อ :other เป็น :value'
+  prohibited_unless: 'ไม่อนุญาตให้กรอกฟิลด์ :attribute เว้นแต่ :other จะอยู่ใน :values'
+  required: 'ฟิลด์ :attribute จำเป็นต้องกรอก'
+  required_if: 'ฟิลด์ :attribute จำเป็นเมื่อ :other เป็น :value'
+  required_unless: 'ฟิลด์ :attribute จำเป็น เว้นแต่ :other จะอยู่ใน :values'
+  required_with: 'ฟิลด์ :attribute จำเป็นเมื่อ :values มีค่า'
+  required_with_all: 'ฟิลด์ :attribute จำเป็นเมื่อ :values มีค่าทั้งหมด'
+  required_without: 'ฟิลด์ :attribute จำเป็นเมื่อ :values ไม่มีค่า'
+  required_without_all: 'ฟิลด์ :attribute จำเป็นเมื่อไม่มี :values ใดๆ มีค่า'
+  unique: ':attribute ถูกใช้งานไปแล้ว'
+  uploaded: ':attribute อัปโหลดล้มเหลว'
