@@ -5,10 +5,51 @@
 fof-moderator-warnings:
   admin:
     permissions:
-      delete_warnings: ลบคำเตือนผู้ดูแลอย่างถาวร
+      delete_warnings: ลบคำเตือนของผู้ดูแลอย่างถาวร
       manage_warnings: สร้างและลบคำเตือนของผู้ดูแล
       view_warnings: ดูคำเตือนของผู้ดูแล
   emails:
     post_warned:
-      body: "สวัสดี {warnee_display_name}!\n\n{warner_display_name} ได้เตือนคุณจำนวน {strikes, plural, one {# นัด} เเละอื่นๆ อีก {# นัด}} ใน {discussion_title}\n\nตามเหตุผลนี้:\n\n---\n\n{public_comment}\n"
-      subject: '{warner_display_name} ได้เตือนคุณจำนวน {strikes, plural, one {# นัด} เเละอื่นๆ อีก {# นัด}} ใน {discussion_title}'
+      body: "สวัสดี {warnee_display_name}!\n\n{warner_display_name} ได้เตือนคุณด้วย {strikes, plural, other {# แต้มโทษ}} ในโพสต์ {discussion_title}\n\nเหตุผล:\n\n---\n\n{public_comment}\n"
+      subject: '{warner_display_name} ได้เตือนคุณด้วย {strikes, plural, other {# แต้มโทษ}} ในโพสต์ {discussion_title}'
+    user_warned:
+      body: "สวัสดี {warnee_display_name}!\n\n{warner_display_name} ได้เตือนคุณด้วย {strikes, plural, other {# แต้มโทษ}}\n\nเหตุผล:\n\n---\n\n{public_comment}\n"
+      subject: '{warner_display_name} ได้เตือนคุณด้วย {strikes, plural, other {# แต้มโทษ}}'
+  forum:
+    notifications:
+      warning_no_strikes_text: 'คุณได้รับคำเตือนจาก {mod_username} (ไม่มีแต้มโทษ)'
+      warning_text: '{strikes, plural, other {คุณได้รับคำเตือน # แต้มโทษจาก {mod_username}}}'
+    post:
+      warning: '{strikes, plural, other {ได้รับคำเตือน # แต้มโทษจาก {mod_username}}}'
+      warning_no_strikes: 'ได้รับคำเตือนโดยไม่มีแต้มโทษจาก {mod_username}'
+    post_controls:
+      warning_button: เตือนผู้ใช้
+    settings:
+      warning_notification_label: ผู้ดูแลเตือนฉัน
+    user:
+      warnings: คำเตือนจากผู้ดูแล
+    validation:
+      invalid_strike_count: 'จำนวนแต้มโทษต้องเป็นจำนวนเต็มระหว่าง 0 ถึง 5'
+      public_comment_required: กรุณาใส่ความคิดเห็นสาธารณะ
+    warning_controls:
+      delete_button: ลบออก
+      delete_forever_button: ลบถาวร
+      restore_button: กู้คืน
+    warning_list:
+      add_button: เพิ่มคำเตือน
+      no_warnings: ยังไม่มีคำเตือน
+      warnings: '{strikes, plural, other {คำเตือนจากผู้ดูแล: ได้รับ # แต้มโทษ}}'
+      warnings_no_strikes: 'คำเตือนจากผู้ดูแล: ไม่มีแต้มโทษ'
+    warning_list_item:
+      linked_post: โพสต์ที่เชื่อมโยง
+      list_item_heading: '{strikes, plural, other {<strong>#</strong> แต้มโทษ, {time}}}'
+      list_item_heading_hidden: '{strikes, plural, other {<strong>#</strong> แต้มโทษ, {time} <strong>(ถูกลบแล้ว)</strong>}}'
+      private_comment: หมายเหตุสำหรับผู้ดูแล
+      public_comment: คำเตือน
+    warning_modal:
+      confirmation_message: 'บันทึกคำเตือนเรียบร้อยแล้ว อาจต้องรีเฟรชหน้าเพื่อให้แสดงผล'
+      heading: 'เตือน <strong>{username}</strong>'
+      private_comment_heading: 'เหตุผลที่เตือน <strong>{username}</strong>? ความคิดเห็นนี้จะมองเห็นได้เฉพาะผู้ดูแลเท่านั้น'
+      public_comment_heading: 'เหตุผลที่เตือน <strong>{username}</strong>? ความคิดเห็นนี้จะมองเห็นได้โดยผู้ใช้และผู้ดูแลคนอื่น'
+      strikes_heading: 'ควรให้แต้มโทษกี่แต้ม?'
+      submit_button: บันทึกคำเตือน

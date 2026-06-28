@@ -7,25 +7,31 @@ fof-discussion-language:
     permissions:
       allow_change_language_label: อนุญาตให้แก้ไขภาษา
     settings:
-      composer_default_label: เลือกสถานที่ปัจจุบันล่วงหน้าในผู้เขียนกระทู้
+      composer_default_label: เลือกภาษาปัจจุบันล่วงหน้าในช่องแต่งโพสต์
+      config:
+        country_label: 'ประเทศ (สำหรับแสดงธงชาติ)'
+        language_label: ภาษา
       errors:
-        missing_assets: 'เราไม่สามารถโหลดเนื้อหาที่ส่วนขยายนี้ต้องการได้ ลองเรียกใช้ <code>php flarum asset:publish</code> และดูว่าสามารถแก้ไขปัญหาได้หรือไม่'
-      locale_sort_label: ใช้ภาษาที่ตรวจพบสำหรับตัวกรองกระทู้เริ่มต้น
-      native_label: ใช้ชื่อภาษาแม่
-      show_any_lang_opt_label: 'แสดงตัวเลือกเพื่อเลือก "ภาษาใดก็ได้"'
-      show_flag_label: แสดงธงประเทศพร้อมชื่อภาษา
-      tags_page_discussion_locale_label: แสดงเฉพาะกระทู้จากสถานที่ปัจจุบันของผู้ใช้ในหน้าแท็ก
+        missing_assets: 'ไม่สามารถโหลดไฟล์ที่ส่วนขยายนี้ต้องการได้ ลองรัน <code>php flarum assets:publish</code> เพื่อแก้ไขปัญหา'
+      locale_sort_label: ใช้ภาษาที่ตรวจพบสำหรับตัวกรองโพสต์เริ่มต้น
+      native_label: 'ใช้ชื่อภาษาในภาษานั้น ๆ'
+      show_any_lang_opt_label: 'แสดงตัวเลือก "ทุกภาษา"'
+      show_flag_label: แสดงธงชาติพร้อมชื่อภาษา
+      tags_page_discussion_locale_label: แสดงเฉพาะโพสต์ที่ตรงกับภาษาปัจจุบันของผู้ใช้ในหน้าแท็ก
   api:
     discussion:
-      validation_error: คุณต้องเลือกภาษาของกระทู้
+      validation_error: กรุณาเลือกภาษาของโพสต์
   forum:
     change_language:
-      edit_title: 'เเก้ไขภาษาสำหรับ {title}'
+      edit_title: 'แก้ไขภาษาของ {title}'
       submit_button: '=> core.ref.save_changes'
-      title: เเก้ไขภาษา
+      title: แก้ไขภาษา
     composer_discussion:
       choose_language_link: ภาษา
     discussion_controls:
-      change_language_button: ตั้งภาษา
+      change_language_button: ตั้งค่าภาษา
     index_language:
       any: ทุกภาษา
+    sub_controls:
+      subscription_language_help: 'เมื่อเลือกภาษาแล้ว คุณจะได้รับการแจ้งเตือนเฉพาะกิจกรรมในภาษานั้น'
+      subscription_language_label: ภาษาของโพสต์

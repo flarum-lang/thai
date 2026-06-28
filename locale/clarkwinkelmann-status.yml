@@ -5,16 +5,17 @@
 clarkwinkelmann-status:
   admin:
     permissions:
+      mod: จัดการสถานะผู้ใช้
       see: ดูสถานะ
-      set: ความหมายของสถานะ
+      set: ตั้งสถานะ
     settings:
-      enable-text: อนุญาติใช้สถานะข้อความ
-      only-countries: เฉพาะธงของเเต่ละประเทศ
+      enable-text: อนุญาตให้ตั้งสถานะเป็นข้อความ
+      only-countries: แสดงเฉพาะธงประเทศ
   forum:
     menu:
-      set-status: ตั้งค่าสถานะ
+      set-status: ตั้งสถานะ
     modal:
-      clear: เคลียร์
-      submit: ส่ง
-      text-placeholder: 'เกิดอะไรขึ้น?'
-      title: ตั้งค่าสถานะ
+      clear: ล้าง
+      submit: บันทึก
+      text-placeholder: 'มีอะไรเกิดขึ้น?'
+      title: ตั้งสถานะ

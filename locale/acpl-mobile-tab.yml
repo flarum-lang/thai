@@ -4,4 +4,10 @@
 
 acpl-mobile-tab:
   forum:
+    all_discussions: โพสต์
+    categories: หมวดหมู่
     home: หน้าหลัก
+    log_in: เข้าสู่ระบบ
+    notifications: การแจ้งเตือน
+    profile: โปรไฟล์
+    tags: แท็ก

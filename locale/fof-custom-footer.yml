@@ -8,4 +8,4 @@ fof-custom-footer:
       css: CSS
       height: 'ความสูงของส่วนท้าย (px)'
       js: JS
-      text: ข้อความสำหรับส่วนท้าย
+      text: ข้อความในส่วนท้าย
