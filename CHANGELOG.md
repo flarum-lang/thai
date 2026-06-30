@@ -126,6 +126,7 @@ CHANGELOG
 * [`forumaker/magicread`](https://github.com/forumaker/magicread)
 * [`forumaker/magicslider`](https://github.com/forumaker/magicslider)
 * [`glowingblue/password-strength`](https://github.com/glowingblue/flarum-ext-password-strength)
+* [`huoxin/filter-rule-manager`](https://github.com/huoxin233/flarum-ext-filter-rule-manager)
 * [`huoxin/money-with-history`](https://github.com/huoxin233/flarum-ext-money-with-history)
 * [`huoxin/relative-url`](https://github.com/huoxin233/flarum-ext-relative-url)
 * [`huseyinfiliz/awards`](https://github.com/huseyinfiliz/awards)
