@@ -5,97 +5,97 @@
 fof-linguist:
   admin:
     buttons:
-      apply: บันทึก
-      copy-original: คัดลอกข้อความต้นฉบับ
-      delete-all: ลบการแปลทั้งหมด
-      delete-all-confirm: "การดำเนินการนี้จะลบการแปลที่กำหนดเองของคุณทั้งหมด {count} รายการ กรุณา export หรือสำรองข้อมูลที่ต้องการเก็บไว้ก่อน\n"
-      delete-redundant: ลบการแปลที่ซ้ำซ้อน
-      delete-redundant-confirm: "การดำเนินการนี้จะลบ {count} การแปลที่มีค่าต้นฉบับและค่าที่กำหนดเองเหมือนกัน ซึ่งเป็นประโยชน์สำหรับการทำความสะอาดหลังอัปเดต language pack\n"
+      apply: นำไปใช้
+      copy-original: คัดลอกข้อความดั้งเดิม
+      delete-all: ลบคำแปลทั้งหมด
+      delete-all-confirm: "การดำเนินการนี้จะลบคำแปลที่กำหนดเองของคุณทั้งหมด {count} รายการ โปรดตรวจสอบให้แน่ใจว่าคุณได้ส่งออก (Export) หรือสำรองข้อมูลคำแปลที่สำคัญเก็บไว้ก่อนแล้ว\n"
+      delete-redundant: ลบคำแปลที่ซ้ำซ้อน
+      delete-redundant-confirm: "การดำเนินการนี้จะลบคำแปลจำนวน {count} รายการที่มีค่าข้อความดั้งเดิมและค่าที่กำหนดเองตรงกัน ซึ่งมีประโยชน์สำหรับการล้างข้อมูลขยะหลังจากอัปเดตแพ็กเกจภาษา (Language Pack)\n"
       load-more: โหลดเพิ่มเติม
-      reset: คืนค่าต้นฉบับ
+      reset: คืนค่าข้อความดั้งเดิม
     clear-cache:
-      button: 'ล้าง cache ตอนนี้'
-      text: "การแปลใหม่ยังไม่ถูกนำไปใช้ หมายเหตุ: การล้าง cache อาจทำให้ forum ช้าลงชั่วคราว\n"
+      button: ล้างแคชตอนนี้
+      text: "ข้อความแปลภาษาใหม่ยังไม่มีผลใช้งานในขณะนี้ หมายเหตุ: การล้างแคช (Cache) อาจทำให้บอร์ดสนทนาโหลดช้าลงชั่วขณะ\n"
     coverage:
       all-namespaces: ทั้งหมด
-      apply-missing-filter: แสดงการแปลที่ขาดหายที่ตรงกัน
+      apply-missing-filter: แสดงคำแปลที่ตรงกันที่ขาดหายอยู่
       column-options:
-        locale: ตามภาษา
-        namespace: 'ตาม frontend'
+        locale: จัดกลุ่มตามภาษา
+        namespace: 'จัดกลุ่มตามส่วนแสดงผล (Frontend)'
       columns:
-        all-except-admin: 'Forum และ frontend อื่นๆ'
-        all-frontends: 'แสดง frontend ทั้งหมด'
-        namespace: Namespace
-        total: รวม
+        all-except-admin: บอร์ดสนทนาและส่วนแสดงผลทั่วไป
+        all-frontends: แสดงส่วนหน้าทั้งหมด
+        namespace: 'กลุ่มระบบ (Namespace)'
+        total: รวมทั้งหมด
       count:
-        details: 'รวม {total} / ต้นฉบับ {original} / กำหนดเอง {custom}'
+        details: 'ทั้งหมด {total} รายการ / ข้อความดั้งเดิม {original} รายการ / ข้อความกำหนดเอง {custom} รายการ'
         percent: '{percent} %'
         total: '{translated} / {total}'
       total-options:
-        count: จำนวน
-        percent: เปอร์เซ็นต์
+        count: จำนวนรายการ
+        percent: 'สัดส่วนร้อยละ (%)'
     export:
-      download: Download
-      include-all: 'รวมการแปลที่กำหนดสำหรับภาษา "ทั้งหมด"'
-      include-originals: รวมการแปลต้นฉบับ
-      locale: Locale
-      locale-all: 'Pseudo-locale "All"'
-      namespace: Namespace
+      download: ดาวน์โหลดไฟล์
+      include-all: 'รวมข้อความที่กำหนดสำหรับ "ทุกภาษา"'
+      include-originals: รวมข้อความดั้งเดิมด้วย
+      locale: 'ภาษา (Locale)'
+      locale-all: 'ภาษาเสมือน (Pseudo-locale) "ทั้งหมด"'
+      namespace: 'กลุ่มระบบ (Namespace)'
       namespace-all: ทั้งหมด
-      output: Output
-      output-empty: 'Output ว่างเปล่า'
-      output-loading: 'กำลังโหลด output...'
-      title: Export
-      warning: "รูปแบบ export ใช้ไฟล์ translation แบบ Yaml ของ Flarum และออกแบบมาเพื่อแชร์การแปลระหว่าง forum และผู้ดูแล language pack รูปแบบนี้ไม่ได้ออกแบบมาสำหรับย้ายการแปลทั้งหมดไปยัง forum ใหม่ ขึ้นอยู่กับการใช้งาน การ copy ฐานข้อมูลตรงๆ อาจเป็นทางเลือกที่ดีกว่า\n"
+      output: ผลลัพธ์การส่งออก
+      output-empty: ผลลัพธ์ว่างเปล่า
+      output-loading: กำลังโหลดข้อมูล...
+      title: 'ส่งออก (Export)'
+      warning: "รูปแบบการส่งออก (Export) จะใช้รูปแบบไฟล์ภาษา Yaml ของ Flarum ออกแบบมาสำหรับการแบ่งปันและแลกเปลี่ยนไฟล์ภาษาระหว่างบอร์ดและผู้ดูแลแพ็กเกจภาษา รูปแบบนี้ไม่ได้ออกแบบมาสำหรับการย้ายข้อมูลภาษาทั้งหมดไปยังบอร์ดใหม่ หากต้องการทำเช่นนั้น การคัดลอกฐานข้อมูลโดยตรงอาจเป็นทางเลือกที่ดีกว่า\n"
     filters:
-      for-extension: 'สำหรับ extension'
-      frontend: 'สำหรับ frontend'
-      frontend-all-except-admin: 'ทั้งหมดยกเว้น Admin'
+      for-extension: 'ระบุส่วนขยาย (Extension)'
+      frontend: 'ระบุส่วนหน้า (Frontend)'
+      frontend-all-except-admin: 'ทุกส่วนยกเว้นระบบหลังบ้าน (Admin)'
       mass-edit: แก้ไขจำนวนมาก
-      missing: ค้นหาการแปลที่ขาดหาย
-      missing-middle-label: การแปลใน
+      missing: ค้นหาคำแปลที่ขาดหาย
+      missing-middle-label: คำแปลใน
       negation-options:
         with: มี
         without: ไม่มี
       operation-options:
         and: ทั้งหมด
         or: อย่างใดอย่างหนึ่ง
-      results: 'แสดง {shown} จาก {total} การแปลที่ตรงกัน'
-      search: 'ค้นหา translation string...'
+      results: 'แสดงคำแปลที่ตรงกัน {shown} จากทั้งหมด {total} รายการ'
+      search: ค้นหาข้อความแปลภาษา...
       type-options:
-        any: ต้นฉบับหรือกำหนดเอง
-        original: ต้นฉบับ
-        own: กำหนดเอง
-      with-own-translations: การแปลของฉัน
+        any: ดั้งเดิมหรือที่กำหนดเอง
+        original: ข้อความดั้งเดิม
+        own: ที่กำหนดเอง
+      with-own-translations: คำแปลของฉัน
     import:
-      input: Input
-      input-placeholder: 'ลากวางหรือวาง Yaml file ที่นี่'
-      locale: Locale
-      locale-all: 'Pseudo-locale "All"'
-      override-existing: เขียนทับการแปลที่กำหนดเองที่มีอยู่
-      results: "การ import เสร็จสมบูรณ์ นำเข้า {imported} string และข้ามไป {identical} string ที่เหมือนกัน หน้าจะ refresh เพื่อแสดงการแปลใหม่\n"
-      results-with-ignore: "การ import เสร็จสมบูรณ์ นำเข้า {imported} string ข้าม {ignored} string ที่มีอยู่ และข้าม {identical} string ที่เหมือนกัน หน้าจะ refresh เพื่อแสดงการแปลใหม่\n"
-      submit: Import
-      title: Import
+      input: 'อินพุต (Input)'
+      input-placeholder: 'ลากไฟล์มาวาง หรือวางโค้ดเนื้อหาของไฟล์ Yaml ที่นี่'
+      locale: 'ภาษา (Locale)'
+      locale-all: 'ภาษาเสมือน (Pseudo-locale) "ทั้งหมด"'
+      override-existing: เขียนทับข้อความแปลภาษาที่กำหนดเองเดิมที่มีอยู่
+      results: "การนำเข้าเสร็จสมบูรณ์เรียบร้อยแล้ว มีข้อความถูกนำเข้าจำนวน {imported} รายการ และได้ข้ามข้อความที่เหมือนกันไป {identical} รายการ หน้าเว็บนี้จะทำการรีเฟรชใหม่โดยอัตโนมัติเพื่อแสดงคำแปลล่าสุด\n"
+      results-with-ignore: "การนำเข้าเสร็จสมบูรณ์เรียบร้อยแล้ว มีข้อความถูกนำเข้าจำนวน {imported} รายการ ข้ามข้อความเดิม {ignored} รายการ และข้ามข้อความที่เหมือนกันไป {identical} รายการ หน้าเว็บนี้จะทำการรีเฟรชใหม่โดยอัตโนมัติเพื่อแสดงคำแปลล่าสุด\n"
+      submit: นำเข้าข้อมูล
+      title: 'นำเข้า (Import)'
     known-frontend:
-      admin: Admin
+      admin: 'ระบบหลังบ้าน (Admin)'
       api: API
-      forum: Forum
-      lib: 'Lib (ใช้ทั้งใน Forum และ Admin)'
-      ref: 'Ref (ใช้ซ้ำใน key อื่น)'
+      forum: 'บอร์ดสนทนา (Forum)'
+      lib: 'คลังร่วม Lib (ใช้ทั้งระบบหลังบ้านและหน้าบอร์ด)'
+      ref: 'คีย์อ้างอิง Ref (ใช้ซ้ำในจุดอื่น)'
     known-namespace:
-      core: 'Flarum Core'
-      validation: ข้อผิดพลาดการตรวจสอบ
+      core: 'ระบบหลัก Flarum (Core)'
+      validation: ข้อผิดพลาดการตรวจสอบความถูกต้อง
     locales:
-      all: ทั้งหมด
+      all: ทุกภาษา
     permissions:
-      view_string_keys: 'ดู key ของ translation string'
+      view_string_keys: 'ดูคีย์ข้อความแปลภาษา (Translation String Keys)'
     placeholder:
       all-locales: ข้อความที่กำหนดไว้ที่นี่จะแสดงในทุกภาษา
-      hint: 'ค่าต้นฉบับ:'
+      hint: 'ข้อความดั้งเดิม:'
       not-translated: ยังไม่ได้แปล
     tabs:
-      coverage: ความครอบคลุม
-      export: Export
-      import: Import
-      strings: การแปล
+      coverage: ความครอบคลุมคำแปล
+      export: 'ส่งออก (Export)'
+      import: 'นำเข้า (Import)'
+      strings: ข้อความแปลภาษา

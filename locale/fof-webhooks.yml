@@ -5,100 +5,100 @@
 fof-webhooks:
   actions:
     discussion:
-      deleted: ลบ
-      hidden: โพสต์
+      deleted: 'ลบโพสต์ชื่อ `{1}`'
+      hidden: 'ซ่อนโพสต์ชื่อ `{1}`'
       renamed:
-        description: ชื่อเรื่อง
-        title: ชื่อ
-      restored: คืนค่า
-      started: เริ่ม
+        description: 'ชื่อโพสต์ใหม่: {1}'
+        title: 'เปลี่ยนชื่อหัวข้อโพสต์ `{1}`'
+      restored: 'คืนค่าโพสต์ชื่อ `{1}`'
+      started: 'ตั้งโพสต์ใหม่หัวข้อ `{1}`'
     group:
-      created: สร้าง
-      deleted: ลบ
-      renamed: ชื่อ
+      created: 'สร้างกลุ่มผู้ใช้ใหม่ชื่อ `{1}`'
+      deleted: 'ลบกลุ่มผู้ใช้ชื่อ `{1}`'
+      renamed: 'เปลี่ยนชื่อกลุ่มผู้ใช้เป็น `{1}`'
     post:
-      approved: อนุมัติแล้ว
-      deleted: ลบ
-      hidden: post
-      posted: post
-      restored: คืนค่า
-      revised: แก้ไข
+      approved: 'อนุมัติโพสต์ในโพสต์ `{1}`'
+      deleted: 'ลบโพสต์ในโพสต์ `{1}`'
+      hidden: 'ซ่อนโพสต์ในโพสต์ `{1}`'
+      posted: 'เขียนโพสต์ใหม่ลงในโพสต์ `{1}`'
+      restored: 'คืนค่าโพสต์ในโพสต์ `{1}`'
+      revised: 'แก้ไขเนื้อหาโพสต์ในโพสต์ `{1}`'
     user:
-      deleted: ลบ
-      registered: ผู้ใช้
+      deleted: 'ลบข้อมูลสมาชิก `{1}`'
+      registered: มีสมาชิกใหม่มาลงทะเบียน
       renamed:
-        description: ชื่อ
-        title: ชื่อ
+        description: 'ชื่อสมาชิกใหม่: {1}'
+        title: 'เปลี่ยนชื่อของสมาชิก `{1}`'
   adapters:
     errors:
-      404: ไม่
+      404: 'ไม่พบบริการ Webhook ปลายทาง'
   admin:
     errors:
-      service_not_found: 'ไม่พบ service "{service}"'
-      tag_disabled: 'Webhook นี้มีการตั้งค่าจำกัด tag แต่ Tags extension ถูกปิดใช้งาน การจำกัดจะไม่ถูกนำไปใช้'
-      tag_invalid: 'Webhook นี้ถูกจำกัดไว้ที่ tag ที่ไม่ถูกต้อง การจำกัดจะไม่ถูกนำไปใช้ โปรดตรวจสอบ'
-      url_invalid: 'URL ไม่ถูกต้องสำหรับ service ที่เลือก'
+      service_not_found: 'ไม่พบบริการส่งข้อมูล "{service}" ในระบบ'
+      tag_disabled: 'Webhook นี้มีการตั้งค่าจำกัดตามแท็ก แต่ส่วนขยาย Tags ถูกปิดใช้งานอยู่ สิทธิ์จำกัดนี้จึงจะไม่มีผลใช้งาน'
+      tag_invalid: 'Webhook นี้มีข้อกำหนดจำกัดสิทธิ์สำหรับแท็กที่ไม่มีอยู่จริง สิทธิ์จำกัดนี้จะไม่มีผลการทำงาน โปรดตรวจสอบ'
+      url_invalid: 'ที่อยู่ลิงก์ URL ไม่ถูกต้องสำหรับบริการส่งข้อมูลที่เลือก'
     nav:
-      desc: 'Webhook ที่ปรับแต่งได้สำหรับการส่งออกของ forum ของคุณ'
+      desc: 'ระบบส่งข้อมูลเหตุการณ์ภายในไปหาผู้รับภายนอก (Outgoing Webhooks) สำหรับบอร์ดสนทนาของคุณ'
     settings:
       actions:
         flarum:
           approval:
-            postwasapproved: 'Post Approved'
-            title: 'Flarum Approval'
+            postwasapproved: อนุมัติเปิดโพสต์
+            title: 'ส่วนของการอนุมัติ Flarum (Approval)'
           discussion:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'
             renamed: '=> fof-webhooks.ref.renamed'
             restored: '=> fof-webhooks.ref.restored'
-            started: เริ่ม
-            title: โพสต์
+            started: เริ่มตั้งโพสต์
+            title: 'ส่วนของโพสต์ Flarum (Discussion)'
           group:
-            created: สร้าง
+            created: สร้างกลุ่มใหม่
             deleted: '=> fof-webhooks.ref.deleted'
             renamed: '=> fof-webhooks.ref.renamed'
-            title: กลุ่ม
+            title: 'ส่วนของกลุ่มผู้ใช้ Flarum (Group)'
           post:
             deleted: '=> fof-webhooks.ref.deleted'
             hidden: '=> fof-webhooks.ref.hidden'
-            posted: post
+            posted: ส่งโพสต์ตอบกลับใหม่
             restored: '=> fof-webhooks.ref.restored'
-            revised: แก้ไข
-            title: post
+            revised: แก้ไขข้อมูลโพสต์
+            title: 'ส่วนของโพสต์ Flarum (Post)'
           user:
             deleted: '=> fof-webhooks.ref.deleted'
-            registered: ลงทะเบียน
+            registered: ลงทะเบียนสมาชิกใหม่สำเร็จ
             renamed: '=> fof-webhooks.ref.renamed'
-            title: 'Flarum User'
-      debug_help: 'เพิ่ม log เพิ่มเติมในไฟล์ log ของ Flarum เพื่อ debug ปัญหากับ webhook และ/หรือเหตุการณ์ที่ไม่ทำงานอย่างถูกต้อง'
-      debug_label: Debug
+            title: 'ส่วนของสมาชิก Flarum (User)'
+      debug_help: 'บันทึกข้อมูลเพิ่มเติมลงใน Log ของ Flarum เพื่อใช้ช่วยตรวจสอบวิเคราะห์ปัญหาเมื่อ Webhooks หรือเหตุการณ์ไม่ทำงานถูกต้อง'
+      debug_label: 'โหมดดีบั๊ก (Debug)'
       help:
-        disabled: 'Webhook นี้ถูกปิดใช้งานเพราะไม่มี event ที่เปิดใช้งาน'
-        general: 'ที่นี่คุณสามารถเพิ่ม แก้ไข และลบ webhook จาก forum ของคุณได้'
-        tags: 'คุณสามารถจำกัด webhook ไว้เฉพาะ tag ที่เลือก หากคุณเลือก tag ใด webhook จะถูกทำให้ทำงานเฉพาะเมื่อเหตุการณ์ถูกทำให้ทำงานบนทรัพยากรที่มี tag ที่เลือก'
-        url: 'URL endpoint ของ webhook ที่จะถูกดำเนินการ'
+        disabled: 'Webhook รายการนี้ปิดอยู่เนื่องจากยังไม่ได้เลือกเปิดใช้งานเหตุการณ์ใดๆ'
+        general: 'คุณสามารถทำการเพิ่ม แก้ไข และสั่งลบรายการ Webhooks ของบอร์ดสนทนาได้ที่นี่'
+        tags: 'คุณสามารถจำกัดขอบเขตการยิง Webhooks เฉพาะโพสต์ที่มีแท็กตามที่กำหนด หากเลือกไว้ Webhook จะทำงานก็ต่อเมื่อเหตุการณ์เกิดขึ้นกับโพสต์ที่มีแท็กตรงตามสิทธิ์ที่เลือกเท่านั้น'
+        url: 'ที่อยู่ปลายทาง Endpoint URL ของ Webhook ที่จะใช้ส่งข้อมูลไปหา'
       item:
-        tag_any_label: 'Tag ใดก็ได้'
+        tag_any_label: 'แท็กใดๆ ก็ได้'
       modal:
-        description: 'ที่นี่คุณสามารถแก้ไขเหตุการณ์ที่ webhook จะถูกทำให้ทำงาน'
-        events_label: เหตุการณ์
-        extra_text_help: 'ข้อความพิเศษที่จะรวมไว้ใน webhook ที่ส่ง'
-        extra_text_label: ข้อความเพิ่มเติม
-        group_help: ส่งทรัพยากรที่สามารถมองเห็นได้โดยกลุ่มนี้
-        group_label: กลุ่ม
-        include_matching_tags_label: 'รวม tag ที่ตรงกัน -- สำหรับ webhook ที่จำกัดไว้ที่ tag เฉพาะ แสดงว่า tag ใดที่เหตุการณ์ตรงกัน'
-        max_post_content_length_help: 'ตั้งค่าตัวเลขเพื่อจำกัดเนื้อหา post ในเหตุการณ์ที่เกี่ยวข้องกับ post ทั้งหมด เปลี่ยนเป็น 0 หรือว่างไว้เพื่อลบการจำกัด'
-        max_post_content_length_label: 'ความยาวสูงสุดของเนื้อหา Post'
-        name_help: 'ชื่อของ webhook จะใช้สำหรับสิ่งต่างๆ เช่น Discord username, Slack bot name เป็นต้น'
-        name_label: ชื่อ
-        title: 'ตั้งค่า Webhook'
-        use_plain_text_label: 'ลดปริมาณการจัดรูปแบบในเนื้อหา post'
+        description: 'คุณสามารถกำหนดเลือกได้ว่าต้องการให้ Webhook ส่งสัญญาณออกไปเมื่อเกิดเหตุการณ์ลักษณะใดบ้าง'
+        events_label: 'รายการเหตุการณ์ (Events)'
+        extra_text_help: 'ข้อความเพิ่มเติมพิเศษที่คุณต้องการให้พ่วงส่งออกไปพร้อมกับสัญญาณ Webhook'
+        extra_text_label: ข้อความแนบส่งเพิ่มเติม
+        group_help: ส่งสัญญาณข้อมูลเฉพาะเนื้อหาที่กลุ่มผู้ใช้กลุ่มนี้มีสิทธิ์เปิดอ่านมองเห็นได้เท่านั้น
+        group_label: 'กลุ่มผู้ใช้ (Group)'
+        include_matching_tags_label: ส่งข้อมูลแท็กที่ตรวจพบคู่ตรงกันร่วมไปด้วย
+        max_post_content_length_help: 'กำหนดตัวเลขความยาวตัวอักษรของโพสต์ที่จะส่งออกไปพร้อมเหตุการณ์ ใส่ค่า 0 หรือว่างไว้เพื่อไม่จำกัดความยาวของเนื้อหาข้อความ'
+        max_post_content_length_label: จำกัดความยาวสูงสุดของข้อความเนื้อหาโพสต์
+        name_help: 'ชื่อของ Webhook นี้จะนำไปใช้แทนตัวตนปลายทาง เช่น ชื่อผู้ส่งใน Discord หรือชื่อผู้โพสต์ในบอท Slack'
+        name_label: 'ชื่อเรียก Webhook'
+        title: 'แก้ไขการตั้งค่า Webhook'
+        use_plain_text_label: 'ลดการแปลงรหัสจัดแต่งฟอร์แมตในเนื้อความโพสต์ (ส่งเป็นข้อความธรรมดา)'
       services:
         discord: Discord
         microsoft-teams: 'Microsoft Teams'
         slack: Slack
   ref:
-    deleted: ลบแล้ว
-    hidden: ซ่อนแล้ว
+    deleted: ลบข้อมูลแล้ว
+    hidden: ซ่อนข้อมูลแล้ว
     renamed: เปลี่ยนชื่อแล้ว
     restored: คืนค่าแล้ว

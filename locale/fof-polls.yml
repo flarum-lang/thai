@@ -5,189 +5,189 @@
 fof-polls:
   admin:
     permissions:
-      change_vote: เปลี่ยนคะแนนโหวต
-      moderate: แก้ไข
-      moderate_group: แก้ไข
-      self_edit: แก้ไข
-      self_post_edit: แก้ไข
-      start: เริ่ม
-      start_global: เริ่ม
-      start_group: สร้าง
-      upload_images: อัปโหลด
-      view_group: ดู
-      view_results_without_voting: ดู
-      vote: 'โหวต poll'
+      change_vote: ปรับเปลี่ยนสิทธิ์แก้คะแนนโหวตใหม่
+      moderate: แก้ไขและสั่งลบแบบสำรวจใดๆ
+      moderate_group: แก้ไขและลบข้อมูลกลุ่มแบบสำรวจ
+      self_edit: 'แก้ไขแบบสำรวจที่ตนเองเป็นผู้สร้าง (จำเป็นต้องมีสิทธิ์แก้ไขโพสต์)'
+      self_post_edit: 'แก้ไขแบบสำรวจทั้งหมดในโพสต์ของตนเอง (จำเป็นต้องมีสิทธิ์แก้ไขโพสต์)'
+      start: เริ่มตั้งแบบสำรวจภายในโพสต์
+      start_global: เริ่มสร้างแบบสำรวจส่วนกลาง
+      start_group: สร้างกลุ่มแบบสำรวจใหม่
+      upload_images: อนุญาตให้ผู้ใช้อัปโหลดรูปภาพประกอบแบบสำรวจ
+      view_group: เข้าดูหน้ากลุ่มแบบสำรวจ
+      view_results_without_voting: เปิดดูผลลัพธ์คะแนนได้โดยไม่ต้องลงคะแนนโหวต
+      vote: โหวตลงคะแนนในแบบสำรวจ
     settings:
-      enable_global_polls: เปิดใช้งาน
-      enable_global_polls_help: ไม่
-      enabled_poll_groups: เปิดใช้งาน
-      enabled_poll_groups_help: กลุ่ม
+      enable_global_polls: 'เปิดใช้งานระบบแบบสำรวจส่วนกลาง (Global Polls)'
+      enable_global_polls_help: 'แบบสำรวจส่วนกลางจะไม่เชื่อมโยงกับโพสต์ใดโพสต์หนึ่งเป็นการเฉพาะ โดยสมาชิกสามารถเข้าใช้งานผ่านหน้าเมนูแบบสำรวจหลักของชุมชน'
+      enabled_poll_groups: 'เปิดใช้งานระบบกลุ่มแบบสำรวจ (Poll Groups)'
+      enabled_poll_groups_help: 'กลุ่มแบบสำรวจช่วยให้สามารถจัดรวบรวมแบบสำรวจส่วนกลางหลายๆ รายการมาแสดงผลร่วมกันในหน้าเพจที่แบ่งหมวดหมู่ไว้เฉพาะ'
       general:
-        heading: ตั้งค่า
-        help: ตั้งค่า
+        heading: การตั้งค่าทั่วไป
+        help: 'การตั้งค่าเหล่านี้ควบคุมคุณลักษณะพื้นฐานของส่วนขยายระบบแบบสำรวจ (Polls)'
       global_polls:
-        heading: 'Global Polls'
-        help: 'ตั้งค่าที่ควบคุมฟีเจอร์ global polls'
+        heading: แบบสำรวจส่วนกลาง
+        help: การตั้งค่าควบคุมคุณลักษณะสำหรับการตั้งแบบสำรวจส่วนกลางของบอร์ด
       image:
-        heading: ตั้งค่า
-      max_options: ตัวเลือก
-      options_color_blend: ข้อความ
-      options_color_blend_help: ปิดใช้งาน
+        heading: การตั้งค่ารูปภาพประกอบ
+      max_options: จำนวนตัวเลือกคำตอบสูงสุดต่อหนึ่งแบบสำรวจ
+      options_color_blend: ผสมผสานโทนสีของข้อความในตัวเลือกแบบสำรวจ
+      options_color_blend_help: 'ใช้การประสมโทนสีพื้นหลังเพื่อให้ข้อความคำตอบของแบบสำรวจสามารถอ่านได้ง่ายขึ้น โปรดปิดตัวเลือกนี้หากฟีเจอร์ส่งผลกระทบต่อสไตล์การแสดงผลของสกินบอร์ดจนทำให้อ่านยากกว่าเดิม'
   forum:
-    answers: คำตอบ
+    answers: ตัวเลือกคำตอบ
     compose:
-      add_title: เพิ่ม
-      continue_editing: แก้ไข
-      draft_saved: บันทึก
-      edit_title: แก้ไข
-      polls_manager: 'Poll Manager'
-      polls_preview: ดู
-      publish: เผยแพร่
-      save_as_draft: บันทึก
-      schedule: กำหนดการ
-      schedule_datetime_label: เผยแพร่ที่
-      schedule_publication: กำหนดการเผยแพร่
-      schedule_publication_edit: แก้ไข
+      add_title: สร้างแบบสำรวจใหม่
+      continue_editing: เขียนต่อข้อมูลแบบสำรวจ
+      draft_saved: บันทึกแบบร่างสำเร็จแล้ว
+      edit_title: แก้ไขแบบสำรวจ
+      polls_manager: ระบบจัดการแบบสำรวจ
+      polls_preview: เปิดแสดงแบบสำรวจ
+      publish: เผยแพร่ทันที
+      save_as_draft: บันทึกเก็บเป็นแบบร่าง
+      schedule: บันทึกเวลา
+      schedule_datetime_label: เริ่มเผยแพร่ที่เวลา
+      schedule_publication: กำหนดกำหนดการเผยแพร่
+      schedule_publication_edit: แก้ไขวันกำหนดการเผยแพร่
       schedule_submit: กำหนดการ
-      submit: ส่ง
-      success: บันทึก
-      update_draft: อัปเดต
+      submit: ส่งข้อมูล
+      success: บันทึกข้อมูลแบบสำรวจสำเร็จ
+      update_draft: ปรับปรุงข้อมูลแบบร่าง
     composer_discussion:
       add_poll: '=> fof-polls.forum.moderation.add'
       edit_poll: '=> fof-polls.forum.moderation.edit'
-      no_permission_alert: ไม่
-    days_remaining: เวลา
-    max_votes_allowed: ตัวเลือก
+      no_permission_alert: คุณไม่มีสิทธิ์ในการเริ่มจัดตั้งแบบสำรวจ
+    days_remaining: 'แบบสำรวจนี้จะสิ้นสุดลงใน {time}'
+    max_votes_allowed: 'แบบสำรวจนี้อนุญาตให้ลงคะแนนได้สูงสุด {max, plural, other {# ตัวเลือก}}'
     modal:
-      add_option_label: เพิ่ม
-      add_title: เพิ่ม
-      allow_change_vote_label: ผู้ใช้
-      allow_multiple_votes_label: ตัวเลือก
-      date_placeholder: ตัวเลือก
+      add_option_label: เพิ่มตัวเลือกคำตอบ
+      add_title: สร้างแบบสำรวจใหม่
+      allow_change_vote_label: อนุญาตให้ผู้ใช้แก้ไขเปลี่ยนคะแนนโหวตของตนเองภายหลังได้
+      allow_multiple_votes_label: อนุญาตให้ผู้ใช้ลงคะแนนโหวตเลือกได้มากกว่าหนึ่งคำตอบ
+      date_placeholder: 'กำหนดวันสิ้นสุดโพล (ระบุหรือไม่ก็ได้)'
       delete: '=> core.ref.delete'
-      edit_title: แก้ไข
-      empty_answers: นำออก
+      edit_title: แก้ไขแบบสำรวจ
+      empty_answers: '{count, plural, other {มีช่องตัวเลือกคำตอบว่างเปล่าอยู่ # จุด — โปรดกรอกข้อมูลให้ครบหรือกดนำออก}}'
       error: '=> core.lib.error.generic_message'
-      hide_votes_label: ซ่อน
-      hide_votes_label_help: เริ่ม
-      image_option_placeholder: URL
-      include_question: ต้องรวมคำถาม
-      max: 'คุณสามารถมีคำตอบสูงสุด {max} คำตอบ'
-      max_votes_help: ผู้ใช้
-      max_votes_label: ผู้ใช้
-      min: 'ต้องรวมคำตอบอย่างน้อย 2 คำตอบ'
-      no_voters: ไม่
-      option_placeholder: คำตอบ
-      options_label: คำตอบ
+      hide_votes_label: ซ่อนจำนวนคะแนนผลโหวตไว้จนกว่าแบบสำรวจนี้จะปิดตัวลง
+      hide_votes_label_help: ผู้ตั้งแบบสำรวจจะยังคงมีสิทธิ์มองเห็นความคืบหน้าของคะแนนอยู่เสมอ
+      image_option_placeholder: 'ลิงก์ภาพประกอบตัวเลือก (ระบุหรือไม่ก็ได้)'
+      include_question: คุณจำเป็นต้องกำหนดชื่อคำถามแบบสำรวจ
+      max: 'คุณสามารถใส่คำตอบได้สูงสุดไม่เกิน {max} ตัวเลือก'
+      max_votes_help: 'กำหนดเป็น 0 เพื่อเปิดให้ผู้ใช้โหวตเลือกตอบกี่ตัวเลือกก็ได้ตามความต้องการ'
+      max_votes_label: คะแนนโหวตเลือกสูงสุดต่อผู้ใช้หนึ่งคน
+      min: 'คุณจำเป็นต้องระบุตัวเลือกคำตอบอย่างน้อย 2 ข้อขึ้นไป'
+      no_voters: ยังไม่มีคะแนนลงโหวต
+      option_placeholder: ระบุตัวเลือกคำตอบที่นี่
+      options_label: ตัวเลือกคำตอบทั้งหมด
       poll_image:
-        alt_help_text: ข้อความ
-        alt_label: ข้อความ
-        help: 'อัปโหลดภาพเพื่อแสดงควบคู่กับ poll (ไม่บังคับ)'
-        label: 'Poll Image'
+        alt_help_text: 'จำเป็นต้องระบุข้อความนี้หากใส่รูปภาพ โดยจะใช้แสดงเมื่อเบราว์เซอร์ไม่สามารถโหลดรูปภาพได้สำเร็จ'
+        alt_label: 'ข้อความคำอธิบายรูปภาพ (Alt Text)'
+        help: 'อัปโหลดรูปภาพเพื่อแสดงคู่กับหัวข้อแบบสำรวจ (ระบุหรือไม่ก็ได้)'
+        label: รูปภาพหลักของแบบสำรวจ
       poll_option_image:
-        help: 'อัปโหลดภาพเพื่อแสดงควบคู่กับคำตอบ poll (ไม่บังคับ)'
-        label: 'Poll Answer Image'
-      public_poll_label: ทั้งหมด
-      question_placeholder: คำถาม
-      submit: ส่ง
-      subtitle_placeholder: ชื่อเรื่อง
+        help: 'อัปโหลดรูปภาพเพื่อนำมาแสดงคู่กับคำตอบข้อนี้ (ระบุหรือไม่ก็ได้)'
+        label: รูปภาพประกอบตัวเลือกคำตอบ
+      public_poll_label: อนุญาตให้ทุกคนตรวจสอบผู้ที่ลงคะแนนโหวตในแต่ละหัวข้อได้
+      question_placeholder: ระบุข้อความคำถาม
+      submit: บันทึกข้อมูล
+      subtitle_placeholder: 'ระบุหัวข้อย่อยหรือข้อชี้แจงเพิ่มเติม (ระบุหรือไม่ก็ได้)'
       tooltip:
         options:
-          add-button: เพิ่ม
+          add-button: เพิ่มตัวเลือก
     moderation:
-      add: เพิ่ม
-      delete: นำออก
-      delete_confirm: ลบ
-      edit: แก้ไข
-    no_permission: สิทธิ์
+      add: เพิ่มแบบสำรวจ
+      delete: ลบแบบสำรวจออก
+      delete_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการลบแบบสำรวจนี้?'
+      edit: แก้ไขแบบสำรวจ
+    no_permission: คุณไม่มีสิทธิ์การเข้าถึงในการลงคะแนนโหวต
     page:
-      nav: Polls
-      nav-all: ทั้งหมด
-      nav-groups: กลุ่ม
+      nav: แบบสำรวจ
+      nav-all: แบบสำรวจส่วนกลางทั้งหมด
+      nav-groups: กลุ่มแบบสำรวจ
     poll:
-      cannot_change_vote: คุณไม่สามารถเปลี่ยนคะแนนโหวตหลังจากโหวตแล้ว
-      cannot_start_poll_button: ไม่
-      draft_label: ร่าง
-      scheduled_error_tooltip: เปิด
-      scheduled_label: วันที่
-      start_poll_button: เริ่ม
-      submit_button: โหวต
-      total_votes: จำนวน
+      cannot_change_vote: คุณไม่สามารถเปลี่ยนแปลงแก้ไขคะแนนโหวตได้อีกหลังจากลงคะแนนไปแล้ว
+      cannot_start_poll_button: ไม่สามารถสร้างแบบสำรวจได้
+      draft_label: แบบร่าง
+      scheduled_error_tooltip: 'การจัดพิมพ์เผยแพร่ตามกำหนดเวลาล้มเหลว กรุณาเปิดแบบสำรวจเพื่อตรวจสอบเหตุผลรายละเอียด'
+      scheduled_label: 'ตั้งกำหนดการเผยแพร่ในวันที่ {date}'
+      start_poll_button: สร้างแบบสำรวจส่วนกลาง
+      submit_button: ส่งคะแนนโหวต
+      total_votes: '{count, plural, other {คะแนนโหวตรวมทั้งหมด # คะแนน}}'
     poll_controls:
-      cancel_schedule_label: ยกเลิก
-      cancel_schedule_success: ยกเลิก
-      delete_confirmation: ลบ
-      delete_error_message: 'เกิดข้อผิดพลาดขณะลบ poll'
+      cancel_schedule_label: ยกเลิกกำหนดเวลาเผยแพร่
+      cancel_schedule_success: ยกเลิกกำหนดการเผยแพร่เสร็จเรียบร้อย
+      delete_confirmation: 'คุณแน่ใจหรือไม่ว่าต้องการลบแบบสำรวจนี้อย่างถาวร?'
+      delete_error_message: เกิดข้อผิดพลาดในการพยายามลบแบบสำรวจ
       delete_label: '=> core.ref.delete'
-      delete_success_message: ลบ
+      delete_success_message: ลบแบบสำรวจเสร็จสิ้นเรียบร้อย
       edit_label: '=> core.ref.edit'
-      edit_schedule_publish_label: แก้ไข
-      publish_label: เผยแพร่ตอนนี้
-      publish_success: เผยแพร่แล้ว
-      schedule_publish_label: กำหนดการเผยแพร่
-      unpublish_confirmation: แสดง
-      unpublish_error_has_votes: ลบ
-      unpublish_label: ย้อนกลับ
-      unpublish_success: ร่าง
+      edit_schedule_publish_label: แก้ไขกำหนดเวลาการเผยแพร่
+      publish_label: เผยแพร่ทันที
+      publish_success: แบบสำรวจได้รับการเผยแพร่แล้ว
+      schedule_publish_label: กำหนดเวลาสำหรับการเผยแพร่
+      unpublish_confirmation: 'ต้องการย้ายแบบสำรวจนี้กลับเป็นแบบร่างหรือไม่? รายการนี้จะหายไปจากหน้าตู้โชว์แสดงผล'
+      unpublish_error_has_votes: 'ไม่สามารถยกเลิกการเผยแพร่ได้เนื่องจากมีการลงคะแนนโหวตในระบบแล้ว โปรดลบแบบสำรวจนี้ทิ้งแทนหากต้องการยกเลิก'
+      unpublish_label: ย้ายกลับไปยังสถานะแบบร่าง
+      unpublish_success: ย้ายแบบสำรวจกลับไปยังกล่องเก็บแบบร่างเรียบร้อยแล้ว
       view_label: '=> core.ref.view'
-    poll_ended: 'Poll นี้สิ้นสุดแล้ว'
+    poll_ended: แบบสำรวจนี้ปิดรับคะแนนแล้ว
     poll_form:
-      delete: ลบ
-      error: ข้อผิดพลาด
+      delete: ลบแบบสำรวจ
+      error: 'เกิดข้อผิดพลาดในการบันทึกแบบสำรวจ โปรดติดต่อผู้ดูแลระบบบอร์ดเพื่อขอความช่วยเหลือ'
     poll_groups:
       composer:
-        add_title: เพิ่ม
-        delete: ลบ
-        edit_title: แก้ไข
-        groups_manager: กลุ่ม
+        add_title: สร้างกลุ่มแบบสำรวจ
+        delete: ลบกลุ่มแบบสำรวจนี้
+        edit_title: แก้ไขกลุ่มแบบสำรวจ
+        groups_manager: หน้าจัดการกลุ่มแบบสำรวจ
         save_changes: '=> core.ref.save_changes'
-        success: บันทึก
-        view_group: ดู
+        success: บันทึกข้อมูลกลุ่มแบบสำรวจเสร็จสมบูรณ์
+        view_group: แสดงผลกลุ่มแบบสำรวจ
       controls:
-        add_poll_label: เพิ่ม
-        delete_confirmation: ลบ
-        delete_error_message: กลุ่ม
+        add_poll_label: เพิ่มแบบสำรวจ
+        delete_confirmation: 'คุณแน่ใจหรือไม่ว่าต้องการลบกลุ่มแบบสำรวจนี้?'
+        delete_error_message: เกิดความผิดพลาดในการดำเนินการลบกลุ่มแบบสำรวจ
         delete_label: '=> core.ref.delete'
-        delete_success_message: ลบ
+        delete_success_message: ลบกลุ่มแบบสำรวจเรียบร้อยแล้ว
         edit_label: '=> core.ref.edit'
-        view_label: ดู
+        view_label: ดูรายละเอียดกลุ่มแบบสำรวจ
       list_page:
-        add_poll_button: เพิ่ม
-        cannot_start_poll_group_button: ไม่
-        empty_text: ไม่
+        add_poll_button: นำแบบสำรวจเข้ากลุ่ม
+        cannot_start_poll_group_button: ไม่สามารถสร้างกลุ่มแบบสำรวจได้
+        empty_text: ดูเหมือนว่าจะยังไม่มีกลุ่มแบบสำรวจปรากฏอยู่ที่นี่ในขณะนี้
         load_more_button: '=> core.ref.load_more'
-        no_polls: ไม่
-        start_poll_group_button: เริ่ม
-        title: กลุ่ม
-    poll_never_ends: 'Poll ไม่มีวันสิ้นสุด'
-    polls_count: จำนวน
+        no_polls: ไม่มีแบบสำรวจในกลุ่มนี้
+        start_poll_group_button: สร้างกลุ่มแบบสำรวจใหม่
+        title: กลุ่มแบบสำรวจ
+    poll_never_ends: แบบสำรวจนี้ไม่มีกำหนดวันสิ้นสุด
+    polls_count: '{count, plural, other {{count} คะแนนโหวต}}'
     polls_list:
-      empty_text: ไม่
+      empty_text: ดูเหมือนว่าในขณะนี้ยังไม่มีแบบสำรวจของชุมชนปรากฏอยู่เลย
       load_more_button: '=> core.ref.load_more'
       sort_dropdown:
-        least_voted: โหวตน้อยที่สุด
-        most_voted: โหวตมากที่สุด
-        newest: ใหม่ที่สุด
+        least_voted: ได้รับการโหวตต่ำสุด
+        most_voted: ได้รับการโหวตสูงสุด
+        newest: ใหม่ล่าสุด
         oldest: เก่าที่สุด
         sort_dropdown:
           default: '=> fof-polls.forum.polls_list.sort_dropdown.newest'
       status_filter:
         all: ทั้งหมด
-        draft: ร่าง
+        draft: แบบร่าง
         published: เผยแพร่แล้ว
     polls_page:
-      title: Polls
-    public_poll: ดู
+      title: แบบสำรวจความคิดเห็น
+    public_poll: ดูรายชื่อผู้ลงคะแนน
     showcase:
-      active-polls: 'Active Polls'
-      ended-polls: 'Concluded Polls'
-      no-active-polls: 'ไม่มี active polls ในขณะนี้'
-      no-recent-polls: 'ไม่มี recently ended polls ในขณะนี้'
+      active-polls: แบบสำรวจความคิดเห็นที่เปิดอยู่
+      ended-polls: แบบสำรวจที่ปิดการโหวตไปแล้ว
+      no-active-polls: ไม่มีแบบสำรวจที่เปิดรับโหวตอยู่ในขณะนี้
+      no-recent-polls: ไม่มีแบบสำรวจที่เพิ่งปิดทำการโหวตในช่วงนี้
     tooltip:
-      badge: Poll
-      votes: '{count, plural, one {# vote} other {# votes}}'
+      badge: แบบสำรวจ
+      votes: '{count, plural, other {# คะแนนโหวต}}'
     upload_image:
-      remove_button: ลบ
-      upload_button: อัปโหลด
+      remove_button: ลบรูปภาพประกอบทิ้ง
+      upload_button: อัปโหลดรูปภาพประกอบ
     votes_modal:
-      title: Voters
+      title: ผู้ลงคะแนนทั้งหมด

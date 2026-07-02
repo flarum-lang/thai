@@ -5,28 +5,28 @@
 fof-share-social:
   admin:
     settings:
-      canonical-urls: ไม่
-      default-option: ค่าเริ่มต้น
-      default-option-help: แสดง
-      plain-copy: คัดลอก
+      canonical-urls: 'ใช้ที่อยู่ลิงก์ถาวร (Canonical URLs) สำหรับการแชร์ข้อมูล'
+      default-option: รูปแบบตัวเลือกการแชร์เริ่มต้น
+      default-option-help: "การเลือกกำหนดค่าเริ่มต้นจะช่วยเปลี่ยนลักษณะปุ่มแชร์ในหน้ารายการให้เป็นแบบปุ่มกดเลือกรายการ (Dropdown Button)\nหากกำหนดตัวเลือกเป็น \"การแชร์ผ่านระบบอุปกรณ์ (Native Share)\" ระบบจะเปิดใช้งานต่อเมื่อเบราว์เซอร์ปลายทางรองรับเท่านั้น มิฉะนั้นพฤติกรรมจะย้อนกลับไปแสดงเมนูแชร์แบบป๊อปอัปดั้งเดิมปกติ\n"
+      plain-copy: 'แสดงผลเมนูกล่องคัดลอกข้อความลิงก์ URL ตรง'
   forum:
     discussion:
-      share_button: share
-      share_dropdown_accessible_label: โพสต์
+      share_button: แชร์
+      share_dropdown_accessible_label: สลับการเปิดปิดเมนูตัวเลือกการแชร์โพสต์
     modal:
-      copy_button: คัดลอก
-      title: share
+      copy_button: คัดลอกที่อยู่ลิงก์
+      title: แชร์หน้าโพสต์นี้
   lib:
     networks:
-      facebook: ตกลง
+      facebook: Facebook
       linkedin: LinkedIn
       my_mail: 'My World'
-      native: share
-      odnoklassniki: ไม่
+      native: 'แชร์ผ่านระบบอุปกรณ์ (Native Share)'
+      odnoklassniki: Odnoklassniki
       qq: QQ
       qzone: QZone
       reddit: Reddit
       telegram: Telegram
-      twitter: 'X (formerly Twitter)'
+      twitter: 'X (เดิมคือ Twitter)'
       vkontakte: VKontakte
       whatsapp: WhatsApp

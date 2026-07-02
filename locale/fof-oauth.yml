@@ -4,55 +4,55 @@
 
 fof-oauth:
   admin:
-    configure_button_label: 'ตั้งค่าด้วย FoF OAuth'
+    configure_button_label: 'กำหนดค่าผู้ให้บริการด้วย FoF OAuth'
     permissions:
-      moderate_user_providers: จัดการบัญชีที่เชื่อมโยงของผู้ใช้
+      moderate_user_providers: จัดการบัญชีภายนอกที่เชื่อมโยงอยู่ของผู้ใช้
     settings:
       advanced:
-        heading: ขั้นสูง
-        log-oauth-errors-help: 'หากเปิดใช้ ข้อผิดพลาด OAuth จะถูกบันทึกในไฟล์ log ของ Flarum ซึ่งอาจช่วยในการแก้ไขปัญหา OAuth แต่อาจมีข้อมูลที่ละเอียดอ่อนด้วย'
-        log-oauth-errors-label: 'บันทึกข้อผิดพลาด OAuth'
-      disable_avatars_help: "หากเปิดใช้ รูปโปรไฟล์ของผู้ใช้จะไม่ถูกอัปเดตตาม Provider เมื่อสมัครสมาชิก โปรดทราบว่าจะมีผลเฉพาะการสมัครในอนาคต ไม่เปลี่ยนรูปของผู้ใช้ที่มีอยู่\n"
-      disable_avatars_label: 'ปิดใช้รูปโปรไฟล์จาก Provider'
-      only_icons_label: 'แสดงเฉพาะไอคอนปุ่ม Login (รูปแบบสลับ)'
+        heading: การตั้งค่าขั้นสูง
+        log-oauth-errors-help: 'หากเปิดใช้งาน รายละเอียดข้อผิดพลาดของการระบุตัวตน (OAuth Errors) จะถูกบันทึกไว้ในระบบบันทึกของ Flarum ซึ่งช่วยในการดีบั๊กตรวจหาปัญหา แต่อาจมีข้อมูลสำคัญที่เป็นความลับปะปนอยู่ด้วย'
+        log-oauth-errors-label: 'บันทึกข้อมูลข้อผิดพลาดของ OAuth'
+      disable_avatars_help: "หากเปิดใช้งาน รูปภาพแทนตัว (Avatar) ของผู้ใช้จะไม่ได้รับการอัปเดตตามรูปโปรไฟล์ของผู้ให้บริการระบบเมื่อสมัครสมาชิกใหม่ ทั้งนี้จะส่งผลต่อผู้ที่สมัครสมาชิกใหม่ในอนาคตเท่านั้น โดยไม่เปลี่ยนรูปโปรไฟล์ปัจจุบันของผู้ใช้ที่มีอยู่แล้ว\n"
+      disable_avatars_label: ปิดใช้งานการดึงรูปโปรไฟล์จากผู้ให้บริการระบบ
+      only_icons_label: 'แสดงเฉพาะปุ่มรูปไอคอนเท่านั้น (การจัดวางรูปแบบทางเลือก)'
       providers:
-        callback_url_text: 'หากจำเป็น ให้กำหนด Callback URL เป็น {url}'
+        callback_url_text: 'กรุณากำหนดค่าที่อยู่ Callback URL เป็น {url} บนระบบผู้ให้บริการหากจำเป็น'
         discord:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: 'สร้าง App ได้ที่ {link} เพิ่ม Redirect URL ในแท็บ OAuth2'
+          description: 'สร้างแอปพลิเคชันของคุณได้ที่ {link} และระบุ Redirect URL ในหน้าแท็บ OAuth2'
         facebook:
           app_id_label: '=> fof-oauth.ref.settings.app_id'
           app_secret_label: '=> fof-oauth.ref.settings.app_secret'
-          description: 'สร้าง App ได้ที่ {link}'
+          description: 'สร้างแอปพลิเคชันของคุณได้ที่ {link}'
         github:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: 'สร้าง OAuth App ได้ที่ {link}'
+          description: 'สร้างแอปพลิเคชัน OAuth ได้ที่ {link}'
         gitlab:
           client_id_label: '=> fof-oauth.ref.settings.app_id'
           client_secret_label: '=> fof-oauth.ref.settings.app_secret'
-          description: 'สร้าง Application ได้ที่ {link} กำหนด Scope <code>read_user</code> ให้กับ Application'
-          domain_label: 'GitLab Domain'
+          description: 'สร้างแอปพลิเคชันของคุณได้ที่ {link} โดยกำหนดขอบเขตสิทธิ์การใช้งาน (Scope) เป็น <code>read_user</code>'
+          domain_label: 'โดเมนระบบ GitLab'
         google:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: 'สร้าง Application ได้ที่ {link}'
-          hosted_domain_label: 'Hosted Domain (G suite/Google Apps for Business, ไม่บังคับ)'
-        group_help: 'เลือกกลุ่มที่จะกำหนดอัตโนมัติให้ผู้ใช้ที่สมัครผ่าน Provider นี้'
-        group_label: กำหนดกลุ่ม
+          description: 'สร้างแอปพลิเคชันของคุณได้ที่ {link}'
+          hosted_domain_label: 'โดเมนเฉพาะ Hosted Domain (G Suite / Google Workspace for Business - ระบุหรือไม่ก็ได้)'
+        group_help: เลือกกลุ่มผู้ใช้ที่จะกำหนดให้โดยอัตโนมัติแก่ผู้ที่สมัครใช้งานผ่านผู้ให้บริการรายนี้
+        group_label: จัดกลุ่มผู้ใช้อัตโนมัติ
         linkedin:
           client_id_label: '=> fof-oauth.ref.settings.client_id'
           client_secret_label: '=> fof-oauth.ref.settings.client_secret'
-          description: 'สร้าง Application ได้ที่ {link}'
-        no_group_label: ไม่กำหนดกลุ่ม
-      update_email_from_provider_help: 'หากเปิดใช้ Email ของผู้ใช้จะถูกอัปเดตตาม Provider OAuth ทุกครั้งที่เข้าสู่ระบบ ไม่ใช่ทุก Provider ที่ให้ Email ที่อัปเดต ในกรณีนั้นการตั้งค่านี้จะไม่มีผล'
-      update_email_from_provider_label: 'อัปเดต Email จาก Provider'
-    settings_accessibility_label: 'การตั้งค่า {name}'
+          description: 'สร้างแอปพลิเคชันของคุณได้ที่ {link}'
+        no_group_label: ไม่ต้องกำหนดกลุ่มผู้ใช้
+      update_email_from_provider_help: 'หากเปิดใช้งาน ที่อยู่อีเมลของผู้ใช้บนบอร์ดจะได้รับการปรับปรุงตามข้อมูลล่าสุดจากผู้ให้บริการ OAuth ทุกครั้งที่ทำการล็อกอินเข้าสู่ระบบ ทั้งนี้ผู้ให้บริการบางรายอาจไม่ได้ให้ข้อมูลอีเมลที่เปลี่ยนใหม่ ซึ่งการตั้งค่านี้จะไม่มีผลการเปลี่ยนแปลงกับผู้ให้บริการรายนั้นๆ'
+      update_email_from_provider_label: อัปเดตอีเมลของผู้ใช้จากผู้ให้บริการระบบโดยอัตโนมัติ
+    settings_accessibility_label: 'การตั้งค่าสำหรับ {name}'
   forum:
     error:
-      bad_verification_code: 'Token การยืนยันไม่ถูกต้องหรือหมดอายุแล้ว กรุณาลองใหม่อีกครั้ง'
-      invalid_state: 'State ไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง'
+      bad_verification_code: 'รหัสโทเค็นสำหรับยืนยันความถูกต้องไม่ถูกต้องหรือหมดอายุการใช้งานแล้ว โปรดลองใหม่อีกครั้ง'
+      invalid_state: 'สถานะคำขอทำงาน (State) ไม่ถูกต้อง โปรดลองใหม่อีกครั้ง'
     log_in:
       with_button: 'เข้าสู่ระบบด้วย {provider}'
       with_discord_button: '=> fof-oauth.forum.log_in.with_button'
@@ -69,19 +69,19 @@ fof-oauth:
       google: '=> fof-oauth.lib.providers.google'
       linkedin: '=> fof-oauth.lib.providers.linkedin'
     signup:
-      username_help: กรุณาเลือกชื่อผู้ใช้ที่จะแสดงในที่นี้
-    unlink: ยกเลิกการเชื่อมโยง
+      username_help: โปรดเลือกชื่อผู้ใช้ที่คุณต้องการใช้แสดงตัวตนในบอร์ดสนทนานี้
+    unlink: ลบการเชื่อมโยงบัญชี
     user:
       settings:
         linked-account:
-          help: 'บัญชีที่เชื่อมโยงเหล่านี้ช่วยให้คุณเข้าสู่ระบบฟอรัมโดยใช้ Provider อื่นได้'
-          identification-label: '{provider} ID'
-          identifier-label: '{provider} ID'
-          label: บัญชีที่เชื่อมโยง
-          last-used-label: ใช้ล่าสุด
-          link-created-label: สร้างลิงก์เมื่อ
-          orphaned-account: 'คุณเคยเข้าสู่ระบบผ่าน Provider นี้ แต่ฟอรัมได้ปิดใช้วิธีการเข้าสู่ระบบนี้แล้ว'
-          unlink-confirm: 'คุณแน่ใจหรือไม่ว่าต้องการยกเลิกการเชื่อมโยงกับ {provider}? คุณจะไม่สามารถเข้าสู่ระบบฟอรัมนี้ได้อีกจนกว่าจะเชื่อมโยงใหม่'
+          help: คุณสามารถเข้าใช้งานบอร์ดสนทนาแห่งนี้ได้อย่างสะดวกโดยผ่านบัญชีผู้ให้บริการภายนอกเหล่านี้ที่เชื่อมโยงอยู่
+          identification-label: 'หมายเลข {provider} ID'
+          identifier-label: 'หมายเลข {provider} ID'
+          label: บัญชีผู้ใช้ภายนอกที่เชื่อมโยงไว้
+          last-used-label: ใช้งานล่าสุดเมื่อ
+          link-created-label: วันเริ่มเชื่อมโยง
+          orphaned-account: 'คุณเคยเชื่อมโยงบัญชีด้วยผู้ให้บริการรายนี้ แต่ทางบอร์ดได้ปิดใช้งานสิทธิ์เชื่อมโยงช่องทางนี้ไปแล้ว'
+          unlink-confirm: 'คุณแน่ใจหรือไม่ว่าต้องการลบการเชื่อมโยงบัญชีกับ {provider}? คุณจะไม่สามารถใช้ช่องทางนี้เพื่อเข้าสู่ระบบบอร์ดได้อีกต่อไป เว้นแต่จะทำการเชื่อมโยงบัญชีใหม่อีกครั้งในภายหลัง'
   lib:
     providers:
       discord: Discord

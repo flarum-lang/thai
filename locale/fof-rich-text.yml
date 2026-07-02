@@ -5,28 +5,28 @@
 fof-rich-text:
   admin:
     settings:
-      toggle_on_editor: แก้ไข
+      toggle_on_editor: 'แสดงปุ่มสำหรับสลับโหมดเขียนข้อความแบบ Rich Text บนแถบเครื่องมือเขียนโพสต์หรือไม่?'
   forum:
     settings:
-      composer_heading: Composer
-      rich_text_compact_paragraphs_label: 'ไม่ต้องแยกย่อหน้าด้วย newline'
-      use_rich_text_editor_label: 'ใช้ rich text editor?'
+      composer_heading: 'กล่องเขียนข้อความ (Composer)'
+      rich_text_compact_paragraphs_label: ไม่ต้องสร้างเว้นบรรทัดว่างเปล่าขนาดใหญ่เมื่อกดเว้นวรรคขึ้นย่อหน้าใหม่
+      use_rich_text_editor_label: 'ใช้กล่องเขียนข้อความโหมด Rich Text เป็นค่าเริ่มต้น?'
   lib:
     composer:
-      additional_items_tooltip: เพิ่ม
-      code_block_tooltip: แทรก
-      horizontal_rule_tooltip: แทรก
-      image_tooltip: เพิ่ม
-      insert_button: แทรก
+      additional_items_tooltip: เครื่องมือควบคุมเพิ่มเติม
+      code_block_tooltip: 'แทรกบล็อกโค้ด (Code Block)'
+      horizontal_rule_tooltip: แทรกเส้นแบ่งแนวนอน
+      image_tooltip: แทรกรูปภาพ
+      insert_button: แทรกข้อมูล
       insert_image:
-        src_placeholder: link
-        title_placeholder: ชื่อเรื่อง
+        src_placeholder: ลิงก์รูปภาพ
+        title_placeholder: ชื่อรูปภาพ
       insert_link:
-        href_placeholder: URL
-        remove_button: นำออก
-        text_placeholder: ข้อความ
-        title_placeholder: แสดง
-      link_tooltip: เพิ่ม
-      spoiler_block_tooltip: 'Block Spoiler/Dropdown'
-      text_type_tooltip: เลือก
-      toggle_button: ข้อความ
+        href_placeholder: 'ที่อยู่ลิงก์ URL'
+        remove_button: ลบลิงก์ออก
+        text_placeholder: ข้อความที่จะแสดงผล
+        title_placeholder: 'คำอธิบายลิงก์ (แสดงขึ้นเมื่อวางเมาส์ชี้)'
+      link_tooltip: แทรกหน้าลิงก์เชื่อมโยง
+      spoiler_block_tooltip: แทรกสปอยเลอร์แบบกล่องซ่อนเนื้อหา
+      text_type_tooltip: เลือกรูปแบบข้อความแสดงผล
+      toggle_button: 'สลับโหมดเขียนข้อความแบบ Rich Text'

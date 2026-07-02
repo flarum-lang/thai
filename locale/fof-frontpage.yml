@@ -5,4 +5,4 @@
 core:
   forum:
     index_sort:
-      front_button: FrontPage
+      front_button: 'แนะนำบนหน้าแรก (FrontPage)'

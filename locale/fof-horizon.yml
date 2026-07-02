@@ -5,56 +5,56 @@
 fof-horizon:
   admin:
     settings:
-      trim_completed: 'ล้าง Completed Jobs'
-      trim_completed_help: "ตารางนี้ใช้แสดง job ที่เสร็จสมบูรณ์ใน Horizon dashboard\n"
-      trim_failed: 'ล้าง Failed Jobs'
-      trim_failed_help: "ตารางนี้ใช้แสดง job ที่ล้มเหลวใน Horizon dashboard\n"
-      trim_help: "ตั้งค่าระยะเวลา (เป็นนาที) ที่ต้องการให้ Horizon\nเก็บ job ที่เพิ่งทำเสร็จและ job ที่ล้มเหลวไว้ โดยทั่วไป job ล่าสุดจะเก็บไว้\nหนึ่งชั่วโมง ส่วน job ที่ล้มเหลวทั้งหมดจะเก็บไว้หนึ่งสัปดาห์\n"
-      trim_monitored: 'ล้าง Monitored Jobs'
-      trim_monitored_help: "ตารางนี้ใช้แสดง job ที่ตรวจสอบอยู่ใน Horizon dashboard\n"
-      trim_pending: 'ล้าง Pending Jobs'
-      trim_pending_help: "ตารางนี้ใช้แสดง job ที่รอดำเนินการใน Horizon dashboard\n"
-      trim_recent: 'ล้าง Recent Jobs'
-      trim_recent_failed: 'ล้าง Recent Failed Jobs'
-      trim_recent_failed_help: "ตารางนี้ใช้แสดง job ที่ล้มเหลวล่าสุดใน Horizon dashboard\n"
-      trim_recent_help: "ตารางนี้ใช้แสดง job ล่าสุดใน Horizon dashboard\n"
-      trim_title: ตั้งค่าการล้างข้อมูล
+      trim_completed: 'เคลียร์งานที่เสร็จสมบูรณ์ (Trim Completed Jobs)'
+      trim_completed_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานที่ทำเสร็จสิ้นสมบูรณ์บนแดชบอร์ดของ Horizon\n"
+      trim_failed: 'เคลียร์งานที่ล้มเหลว (Trim Failed Jobs)'
+      trim_failed_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานที่ประมวลผลล้มเหลวทั้งหมดบนแดชบอร์ดของ Horizon\n"
+      trim_help: "คุณสามารถกำหนดระยะเวลา (หน่วยเป็นนาที) ที่ต้องการให้ Horizon\nจัดเก็บประวัติการประมวลผลงานล่าสุดและงานที่ล้มเหลวไว้ โดยปกติงานล่าสุดจะจัดเก็บไว้\nเป็นเวลาหนึ่งชั่วโมง ในขณะที่งานที่ล้มเหลวจะถูกจัดเก็บไว้เป็นเวลาหนึ่งสัปดาห์เต็ม\n"
+      trim_monitored: 'เคลียร์งานที่กำลังติดตาม (Trim Monitored Jobs)'
+      trim_monitored_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานที่เปิดติดตามตรวจสอบไว้บนแดชบอร์ดของ Horizon\n"
+      trim_pending: 'เคลียร์งานที่รอประมวลผล (Trim Pending Jobs)'
+      trim_pending_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานที่รอดำเนินการบนแดชบอร์ดของ Horizon\n"
+      trim_recent: 'เคลียร์งานล่าสุด (Trim Recent Jobs)'
+      trim_recent_failed: 'เคลียร์งานล้มเหลวล่าสุด (Trim Recent Failed Jobs)'
+      trim_recent_failed_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานที่ล้มเหลวล่าสุดบนแดชบอร์ดของ Horizon\n"
+      trim_recent_help: "ตารางข้อมูลนี้ใช้แสดงประวัติงานล่าสุดบนแดชบอร์ดของ Horizon\n"
+      trim_title: ตั้งค่าการเคลียร์ข้อมูลการทำงาน
     stats:
       auto_refresh: รีเฟรชอัตโนมัติ
       data:
-        failed-last-seconds: 'Job ที่ล้มเหลวในช่วงไม่กี่วินาทีที่ผ่านมา'
-        failure-rate: อัตราล้มเหลว
-        jobs-past-hour: 'Job ในชั่วโมงที่ผ่านมา'
-        jobs-per-minute: 'Job ต่อนาที'
-        max-runtime: เวลาทำงานสูงสุด
-        max-throughput: 'Throughput สูงสุด'
-        max-wait-queue: 'Queue: {queue}'
-        max-wait-time: เวลารอสูงสุด
-        redis-blocked-clients: 'Client ที่ถูก block'
-        redis-connected-clients: 'Client ที่เชื่อมต่ออยู่'
-        redis-max-memory: 'หน่วยความจำสูงสุดที่กำหนดสำหรับ Cache'
-        redis-memory-policy: 'นโยบายหน่วยความจำ Cache'
-        redis-memory-policy-tooltip: "นโยบายหน่วยความจำคือวิธีที่ cache จะเลือกลบข้อมูลเมื่อ\nถึงขีดจำกัด maxmemory ค่าเริ่มต้นคือ `noeviction`: ไม่บันทึกค่าใหม่\nเมื่อถึงขีดจำกัดหน่วยความจำ คลิกเพื่อดูเอกสาร\n"
-        redis-memory-usage: 'การใช้หน่วยความจำ Cache'
-        redis-ops-per-sec: การดำเนินการต่อวินาที
-        redis-peak-memory: 'หน่วยความจำสูงสุดของ Cache'
-        redis-used-memory: 'หน่วยความจำที่ใช้ใน Cache'
+        failed-last-seconds: งานที่ประมวลผลล้มเหลวในไม่กี่วินาทีล่าสุด
+        failure-rate: อัตราส่วนการทำงานล้มเหลว
+        jobs-past-hour: จำนวนงานในชั่วโมงที่ผ่านมา
+        jobs-per-minute: 'จำนวนงานต่อนาที (Jobs Per Minute)'
+        max-runtime: 'ระยะเวลาประมวลผลสูงสุด (Max Runtime)'
+        max-throughput: 'ปริมาณงานสูงสุดที่รองรับได้ (Max Throughput)'
+        max-wait-queue: 'คิว (Queue): {queue}'
+        max-wait-time: เวลารอคิวสูงสุด
+        redis-blocked-clients: 'จำนวนไคลเอนต์ที่ถูกระงับการทำงาน (Blocked Clients)'
+        redis-connected-clients: 'จำนวนไคลเอนต์ที่เชื่อมต่ออยู่ (Connected Clients)'
+        redis-max-memory: 'ขีดจำกัดหน่วยความจำสูงสุด (Max Memory) ของ Cache'
+        redis-memory-policy: 'นโยบายการจัดการหน่วยความจำของ Cache'
+        redis-memory-policy-tooltip: "นโยบายหน่วยความจำคือแนวทางที่ Cache จะเลือกข้อมูลเพื่อเคลียร์ทิ้งเมื่อ\nการใช้งานหน่วยความจำถึงขีดจำกัดสูงสุด (maxmemory) ค่าเริ่มต้นคือ `noeviction` หมายถึง\nจะไม่บันทึกข้อมูลใหม่ใดๆ เพิ่มเข้าไปเมื่อเมมโมรี่เต็ม คลิกเพื่อเปิดอ่านเอกสารเพิ่มเติม\n"
+        redis-memory-usage: 'สัดส่วนการใช้งานหน่วยความจำของ Cache'
+        redis-ops-per-sec: 'จำนวนการทำงานต่อวินาที (Ops Per Second)'
+        redis-peak-memory: 'หน่วยความจำที่ใช้งานสูงสุด (Peak Memory) ของ Cache'
+        redis-used-memory: 'หน่วยความจำที่กำลังใช้งานของ Cache'
         status:
           inactive: ไม่ได้ใช้งาน
           label: สถานะ
           running: กำลังทำงาน
-        success-rate: อัตราสำเร็จ
-        total-processes: 'จำนวน Process ทั้งหมด'
+        success-rate: อัตราส่วนการทำงานสำเร็จ
+        total-processes: 'โปรเซสการทำงานทั้งหมด (Total Processes)'
       error:
-        fetch_failed: 'ไม่สามารถดึงสถิติ Horizon ได้ กรุณาตรวจสอบการตั้งค่า Redis'
-        setup_docs: 'ดูเอกสารการตั้งค่า Redis'
-        title: ข้อผิดพลาดการเชื่อมต่อ
-      full_dashboard: 'Horizon Dashboard'
-      heading: 'ภาพรวม Queue'
+        fetch_failed: 'ไม่สามารถดึงข้อมูลสถิติจาก Horizon ได้ โปรดตรวจสอบการกำหนดค่า Redis ของคุณให้ถูกต้อง'
+        setup_docs: 'ดูเอกสารประกอบการตั้งค่า Redis'
+        title: เกิดข้อผิดพลาดในการเชื่อมต่อ
+      full_dashboard: 'แดชบอร์ด Horizon (Horizon Dashboard)'
+      heading: 'ภาพรวมคิวทำงาน (Queue Overview)'
       health:
         critical: วิกฤต
         excellent: ดีเยี่ยม
         good: ดี
-        poor: ต่ำ
-        tooltip: 'คะแนนสุขภาพระบบ: {score}/100'
-      refresh: Refresh
+        poor: แย่
+        tooltip: 'คะแนนความสมบูรณ์ของระบบ: {score}/100'
+      refresh: รีเฟรชข้อมูล

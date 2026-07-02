@@ -5,22 +5,22 @@
 fof-recaptcha:
   admin:
     permissions:
-      post_without_captcha: 'สร้างโพสต์โดยไม่ต้องผ่าน captcha'
+      post_without_captcha: 'เขียนโพสต์และตั้งโพสต์ได้โดยไม่ต้องผ่านระบบป้องกัน captcha'
     settings:
       forgot: '=> core.forum.forgot_password.title'
-      help_text: 'รับข้อมูลประจำตัว Google reCAPTCHA ได้<a>ที่นี่</a>'
-      secret_key_label: 'Secret Key'
+      help_text: 'รับรหัสตรวจสอบยืนยันตัวตน Google reCAPTCHA ของคุณได้ที่ <a>ลิงก์นี้</a>'
+      secret_key_label: 'รหัสลับ Secret Key'
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
-      site_key_label: 'Site Key'
-      type_label: 'ประเภท reCAPTCHA'
+      site_key_label: 'รหัสไซต์ Site Key'
+      type_label: 'ประเภทของ reCAPTCHA'
     test:
-      help_text: "การทดสอบนี้จะใช้ค่าที่ป้อนด้านบน ตรวจสอบให้แน่ใจว่าโหลดการทดสอบใหม่หลังจากเปลี่ยนการตั้งค่า และอย่าลืมบันทึกเมื่อการทดสอบผ่าน!\nผลด้านล่างอาจไม่สะท้อนการตั้งค่าที่บันทึกไว้\n"
-      load_test_button: โหลด
+      help_text: "การทดสอบนี้จะอ้างอิงค่าข้อมูลที่คุณกรอกไว้ข้างต้น โปรดโหลดหน้าต่างทดสอบใหม่หลังจากเปลี่ยนการตั้งค่า และอย่าลืมกดบันทึกเมื่อการทดสอบระบบผ่านแล้ว!\n(ผลลัพธ์การแสดงด้านล่างอาจจะยังไม่สะท้อนค่าที่เพิ่งบันทึกไป)\n"
+      load_test_button: โหลดหน้าต่างทดสอบ
       reload_button: โหลดใหม่
-      submit_button: ส่ง
-      success_message: 'สำเร็จ! ตั้งค่า reCAPTCHA ถูกต้องแล้ว'
-      title: 'ทดสอบ reCAPTCHA'
+      submit_button: ส่งข้อมูล
+      success_message: 'สำเร็จ! ระบบ reCAPTCHA ได้รับการกำหนดค่าอย่างถูกต้องแล้ว'
+      title: 'ทดสอบระบบ reCAPTCHA'
 validation:
-  recaptcha: 'การยืนยัน reCAPTCHA ล้มเหลว'
-  recaptcha-unknown: 'เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุขณะยืนยัน reCAPTCHA ({errors})'
+  recaptcha: 'การยืนยันความถูกต้องผ่านระบบ reCAPTCHA ล้มเหลว'
+  recaptcha-unknown: 'เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุขณะประเมินความถูกต้องของ reCAPTCHA ({errors})'

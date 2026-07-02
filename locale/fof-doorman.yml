@@ -13,16 +13,16 @@ fof-doorman:
         key: '=> fof-doorman.admin.ref.fields.key.label'
         manage: จัดการ
         max_uses: '=> fof-doorman.admin.ref.fields.max_uses.label'
-        uses: ใช้ไปแล้ว
+        uses: จำนวนครั้งที่ใช้
       content:
-        delete: 'คุณแน่ใจหรือไม่ว่าต้องการลบ Invite Code "{key}"?'
+        delete: 'คุณแน่ใจหรือไม่ว่าต้องการลบรหัสเชิญ "{key}"?'
         invalid_column: '=> core.admin.users.grid.invalid_column_content'
         no_created_by: ผู้ใช้ที่ไม่รู้จัก
         no_group: '=> core.admin.users.grid.columns.group_badges.no_badges'
         uses:
-          total_uses: '{totalUses, plural, one {ใช้ไปแล้ว {totalUses} ครั้ง} other {ใช้ไปแล้ว {totalUses} ครั้ง}}'
-          used_times: '{remaining, plural, =0 {ใช้ได้ไม่จำกัด} one {เหลือ {remainingUses} ครั้ง} other {เหลือ {remainingUses} ครั้ง}}'
-        warning: 'Invite Code นี้ถูกใช้ครบจำนวนสูงสุดแล้ว'
+          total_uses: '{totalUses, plural, other {ใช้งานไปแล้ว {totalUses} ครั้ง}}'
+          used_times: '{remaining, plural, =0 {ใช้งานได้ไม่จำกัด} one {เหลือการใช้งานอีก {remainingUses} ครั้ง} other {เหลือการใช้งานอีก {remainingUses} ครั้ง}}'
+        warning: รหัสเชิญนี้ถูกใช้งานจนครบจำนวนจำกัดสูงสุดแล้ว
     modals:
       create_doorkey:
         activates_user:
@@ -37,9 +37,9 @@ fof-doorman:
         max_uses:
           help: '=> fof-doorman.admin.ref.fields.max_uses.help'
           label: '=> fof-doorman.admin.ref.fields.max_uses.label'
-        submit_and_create_another_button: สร้างและเพิ่มอีก
-        submit_button: 'สร้าง Invite Code'
-        title: 'สร้าง Invite Code ใหม่'
+        submit_and_create_another_button: สร้างและเพิ่มรายการอื่นต่อ
+        submit_button: สร้างรหัสเชิญ
+        title: สร้างรหัสเชิญใหม่
       edit_doorkey:
         activates_user:
           help: '=> fof-doorman.admin.ref.fields.activates_user.help'
@@ -54,40 +54,40 @@ fof-doorman:
           help: '=> fof-doorman.admin.ref.fields.max_uses.help'
           label: '=> fof-doorman.admin.ref.fields.max_uses.label'
         submit_button: บันทึกการเปลี่ยนแปลง
-        title: 'แก้ไข Invite Code'
+        title: แก้ไขรหัสเชิญ
       send_invites:
-        group: 'กำลังส่งคำเชิญสำหรับกลุ่ม {group}'
-        help: 'รองรับการคั่นด้วยเครื่องหมายจุลภาค ช่องว่าง หรือทั้งสองอย่าง พิมพ์ Email ทีละรายการหรือวางรายการแล้วกด Space เพื่อเพิ่ม'
-        invalid_emails: 'Email ต่อไปนี้ไม่ถูกต้อง: {emails}'
-        max_use_conflict: 'จำนวน Email เกินจำนวนครั้งสูงสุดที่อนุญาตสำหรับโค้ดนี้'
-        placeholder: 'กรอก Email ที่นี่'
-        send: 'ส่ง Email'
-        success: 'ส่ง Email สำเร็จแล้ว'
-        title: 'ส่ง Invite Code'
+        group: 'ส่งคำเชิญสำหรับกลุ่ม {group}'
+        help: 'กรอกอีเมลคั่นด้วยเครื่องหมายจุลภาค (,), เว้นวรรค หรือกด Spacebar หลังจากพิมพ์อีเมลแต่ละตัวเพื่อเพิ่มรายการ'
+        invalid_emails: 'ที่อยู่อีเมลต่อไปนี้ไม่ถูกต้อง: {emails}'
+        max_use_conflict: จำนวนอีเมลที่ระบุเกินจำนวนครั้งการใช้งานสูงสุดที่เหลือสำหรับรหัสเชิญนี้
+        placeholder: ระบุที่อยู่อีเมลที่นี่
+        send: ส่งอีเมลคำเชิญ
+        success: ส่งอีเมลคำเชิญสำเร็จแล้ว
+        title: ส่งรหัสเชิญ
     ref:
       fields:
         activates_user:
-          help: เปิดใช้งานบัญชีผู้ใช้โดยอัตโนมัติเมื่อสมัครสมาชิก
+          help: เปิดใช้งานบัญชีผู้ใช้ทันทีเมื่อสมัครสมาชิกสำเร็จ
           label: เปิดใช้งานบัญชีอัตโนมัติ
         group:
-          help: 'กลุ่มที่ผู้ใช้จะถูกเพิ่มเข้าเมื่อสมัครสมาชิกด้วย Invite Code นี้'
-          label: กลุ่ม
+          help: กลุ่มที่ผู้ใช้จะถูกเพิ่มเข้าโดยอัตโนมัติเมื่อลงทะเบียนด้วยรหัสเชิญนี้
+          label: กลุ่มผู้ใช้
         key:
-          help: โค้ดที่ผู้ใช้จะต้องกรอกเมื่อสมัครสมาชิก
-          label: Key
+          help: โค้ดที่ผู้ใช้ต้องกรอกเมื่อสมัครสมาชิก
+          label: 'รหัสเชิญ (Key)'
         max_uses:
-          help: 'จำนวนครั้งสูงสุดที่โค้ดนี้สามารถใช้ได้ ตั้งเป็น 0 เพื่อไม่จำกัด'
-          label: จำนวนครั้งสูงสุด
+          help: 'จำนวนครั้งสูงสุดที่รหัสเชิญนี้สามารถนำไปใช้งานได้ กำหนดเป็น 0 เพื่อไม่จำกัดจำนวนครั้ง'
+          label: จำนวนครั้งสูงสุดที่ใช้ได้
     settings:
-      create_doorkey_button: 'สร้าง Invite Code'
-      optional_usage: 'ทำให้ Invite Code เป็นตัวเลือก (ไม่บังคับ) เมื่อสมัครสมาชิก'
-      search: 'ค้นหา Doorkey'
-      total_doorkeys: 'Doorkey ทั้งหมด: {count}'
+      create_doorkey_button: สร้างรหัสเชิญ
+      optional_usage: 'เปิดให้การกรอกรหัสเชิญเป็นตัวเลือก (ไม่บังคับ) เมื่อลงทะเบียน'
+      search: ค้นหารหัสเชิญ
+      total_doorkeys: 'รหัสเชิญทั้งหมด: {count}'
   email:
-    subject: คำเชิญเข้าร่วม
+    subject: คุณได้รับคำเชิญให้เข้าร่วมชุมชน
   forum:
     sign_up:
-      doorkey_required: 'กรุณากรอก Invite Code'
-      doorman_placeholder: 'Invite Code'
-      doorman_placeholder_optional: 'Invite Code (ไม่บังคับ)'
-      invalid_doorkey: 'Invite Code ที่คุณกรอกไม่ถูกต้อง'
+      doorkey_required: กรุณาระบุรหัสเชิญ
+      doorman_placeholder: 'รหัสเชิญ (Invite Code)'
+      doorman_placeholder_optional: 'รหัสเชิญ (Invite Code - ระบุหรือไม่ก็ได้)'
+      invalid_doorkey: รหัสเชิญที่คุณระบุไม่ถูกต้อง

@@ -6,18 +6,18 @@ flarum-gdpr:
   lib:
     data:
       tagsubscription:
-        anonymize_description: 'ลบการสมัครติดตาม Tag ของผู้ใช้'
-        export_description: 'ส่งออกรายละเอียดระดับการติดตาม Tag หากมี'
+        anonymize_description: ลบข้อมูลการติดตามแท็กของผู้ใช้ออก
+        export_description: 'ส่งออกรายละเอียดระดับการติดตามแท็ก หากระบุไว้'
 fof-follow-tags:
   admin:
     settings:
       following_none_label: '=> fof-follow-tags.ref.filtering_options.none'
-      following_page_default_label: การกรองเริ่มต้นของหน้าติดตาม
+      following_page_default_label: ตัวกรองเริ่มต้นของหน้ากำลังติดตาม
       following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
   forum:
     badge:
       following_tag_tooltip: กำลังติดตาม
-      lurking_tag_tooltip: 'กำลัง Lurk'
+      lurking_tag_tooltip: 'ซุ่มดู (Lurking)'
     hero:
       title: '=> flarum-subscriptions.forum.index.following_link'
     index:
@@ -27,40 +27,40 @@ fof-follow-tags:
         following_tags_label: '=> fof-follow-tags.ref.filtering_options.tags'
       unfollow_tag_button: เลิกติดตาม
     notifications:
-      new_discussion_tag_text: '{username} เปลี่ยน Tag'
-      new_discussion_text: '{username} สร้างโพสต์ใหม่'
-      new_post_text: '{username} โพสต์ใหม่'
+      new_discussion_tag_text: '{username} ได้เปลี่ยนแท็ก'
+      new_discussion_text: '{username} ได้ตั้งโพสต์'
+      new_post_text: '{username} ได้โพสต์ตอบ'
     settings:
-      notify_new_discussion_label: 'มีคนสร้างโพสต์ใน Tag ที่ฉันติดตาม'
-      notify_new_discussion_tag_label: 'มีคนเปลี่ยน Tag ของโพสต์มาเป็น Tag ที่ฉันติดตาม'
-      notify_new_post_label: 'มีคนโพสต์ใน Tag ที่ฉันติดตาม'
+      notify_new_discussion_label: มีคนสร้างโพสต์ใหม่ในแท็กที่ฉันกำลังติดตาม
+      notify_new_discussion_tag_label: มีคนย้ายโพสต์มายังแท็กที่ฉันกำลังติดตาม
+      notify_new_post_label: มีคนโพสต์ตอบในแท็กที่ฉันกำลังติดตาม
     sub_controls:
       follow_button: '=> fof-follow-tags.ref.follow'
       following_button: '=> fof-follow-tags.ref.following'
-      following_text: รับแจ้งเตือนโพสต์ใหม่ทั้งหมด
-      header: 'การสมัครติดตาม {tagName}'
+      following_text: รับการแจ้งเตือนเมื่อมีโพสต์ใหม่ทั้งหมด
+      header: 'การติดตามสำหรับแท็ก {tagName}'
       hiding_button: '=> fof-follow-tags.ref.hiding'
-      hiding_text: ซ่อนโพสต์จากหน้าโพสต์ทั้งหมด
+      hiding_text: 'ซ่อนโพสต์จากหน้า ''โพสต์ทั้งหมด'''
       ignoring_button: '=> fof-follow-tags.ref.ignoring'
-      ignoring_text: 'ไม่รับการแจ้งเตือนใด ๆ'
+      ignoring_text: ไม่ต้องแจ้งเตือนใดๆ
       lurking_button: '=> fof-follow-tags.ref.lurking'
-      lurking_text: รับแจ้งเตือนโพสต์ใหม่และการตอบกลับทั้งหมด
+      lurking_text: รับการแจ้งเตือนเมื่อมีโพสต์ใหม่และโพสต์ตอบกลับทั้งหมด
       not_following_button: ไม่ได้ติดตาม
-      not_following_text: 'รับแจ้งเตือนเฉพาะเมื่อมีคน @mention คุณ'
-      notify_alert_tooltip: รับการแจ้งเตือนในฟอรัมเมื่อมีโพสต์หรือโพสต์ใหม่
-      notify_email_tooltip: 'รับ Email เมื่อมีโพสต์หรือโพสต์ใหม่'
-      submit_button: ยืนยันการสมัครติดตาม
-      subscription_label: 'เลือกระดับการติดตามสำหรับ {tagName}'
+      not_following_text: 'รับการแจ้งเตือนเฉพาะเมื่อโดนกล่าวถึง (@mentioned)'
+      notify_alert_tooltip: รับการแจ้งเตือนบนเว็บไซต์เมื่อมีโพสต์หรือโพสต์ใหม่
+      notify_email_tooltip: รับอีเมลแจ้งเตือนเมื่อมีโพสต์หรือโพสต์ใหม่
+      submit_button: ยืนยันการติดตาม
+      subscription_label: 'เลือกระดับการติดตามสำหรับแท็ก {tagName}'
     user:
       settings:
-        filter_label: สิ่งที่จะแสดงโดยค่าเริ่มต้นในหน้าติดตาม
-        heading: 'ติดตาม Tag'
+        filter_label: 'สิ่งที่จะแสดงเป็นค่าเริ่มต้นในหน้า ''กำลังติดตาม'''
+        heading: ติดตามแท็ก
   ref:
     filtering_options:
       none: โพสต์ที่ติดตาม
-      tags: 'Tag ที่ติดตาม'
+      tags: แท็กที่ติดตาม
     follow: ติดตาม
     following: กำลังติดตาม
-    hiding: ซ่อน
-    ignoring: ไม่สนใจ
-    lurking: Lurking
+    hiding: ซ่อนอยู่
+    ignoring: เพิกเฉย
+    lurking: 'ซุ่มดู (Lurking)'
