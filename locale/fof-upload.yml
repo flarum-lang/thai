@@ -172,7 +172,7 @@ fof-upload:
       max_size: 'ไม่รับไฟล์ที่มีขนาดเกิน {max} kb'
   lib:
     file_list:
-      confirm_selection_btn: '{fileCount, plural, =0 {ยังไม่ได้เลือก} other {เลือก {fileCount} ไฟล์}}'
+      confirm_selection_btn: '{fileCount, plural, =0 {ยังไม่ได้เลือก} other {เลือก # ไฟล์}}'
       delete_confirmation: 'คุณแน่ใจหรือไม่ว่าต้องการลบ "{fileName}"?'
       delete_file_a11y_label: 'ลบไฟล์ "{fileName}"'
       empty: ไม่มีไฟล์ให้แสดง

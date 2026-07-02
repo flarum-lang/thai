@@ -5,87 +5,87 @@
 fof-default-user-preferences:
   admin:
     settings:
-      showIPCountry: 'แสดง flag ของประเทศที่ผู้ใช้ post จาก'
-      showIPCountry-help: 'อ้างอิงจาก IP address ณ เวลาที่ post flag ของประเทศ (ถ้าเปิดใช้งาน) จะมองเห็นได้สำหรับผู้ใช้ทุกคน ส่วน admin และ moderator จะเห็น IP address ใน tooltip'
+      showIPCountry: แสดงธงชาติของประเทศที่ผู้ใช้ส่งโพสต์
+      showIPCountry-help: 'อ้างอิงจาก IP address ณ เวลาที่โพสต์ ธงชาติ (หากเปิดใช้งาน) จะแสดงให้ผู้ใช้ทุกคนเห็น ส่วนผู้ดูแลระบบและผู้ควบคุมบอร์ดจะสามารถดู IP address จริงได้เมื่อชี้เมาส์ที่ไอคอนธงชาติ (Tooltip)'
 fof-geoip:
   admin:
     permissions:
-      see_country: 'แสดงประเทศของ IP address เสมอ'
+      see_country: 'แสดงธงชาติของที่อยู่ IP เสมอ'
     settings:
-      access_key_label: 'Access Key'
-      allow_custom_flag_help: 'เมื่อเปิดใช้งาน ผู้ใช้สามารถเลือก flag ของประเทศเพื่อแสดงใน post ผ่านการตั้งค่า profile flag ที่ผู้ใช้เลือกจะมองเห็นได้สำหรับทุกคนและจะแทนที่ flag ที่อ้างอิงจาก IP ต้องเปิดใช้งาน "แสดง flag ของประเทศในแต่ละ post" ก่อน'
-      allow_custom_flag_label: 'อนุญาตให้ผู้ใช้เลือก flag ประเทศเอง'
-      error_code_prefix: 'รหัส:'
+      access_key_label: 'รหัสเข้าใช้งาน (Access Key)'
+      allow_custom_flag_help: 'เมื่อเปิดใช้งาน ผู้ใช้จะสามารถเลือกธงชาติเพื่อแสดงในโพสต์ผ่านหน้าตั้งค่าโปรไฟล์ได้ โดยธงที่ผู้ใช้เลือกเองนี้จะแสดงผลแก่ทุกคนและมีลำดับความสำคัญสูงกว่าธงที่ตรวจพบจากที่อยู่ IP จริง (จำเป็นต้องเปิดใช้งาน "แสดงธงชาติในแต่ละโพสต์" ก่อน)'
+      allow_custom_flag_label: อนุญาตให้ผู้ใช้เลือกธงชาติเองได้
+      error_code_prefix: 'รหัสข้อผิดพลาด:'
       error_prefix: 'ข้อผิดพลาด:'
       general:
-        heading: ตั้งค่าทั่วไป
-        help: 'การตั้งค่าเหล่านี้ควบคุมพฤติกรรมทั่วไปของ extension'
+        heading: การตั้งค่าทั่วไป
+        help: การตั้งค่าเหล่านี้ควบคุมลักษณะการทำงานทั่วไปของส่วนขยาย
       providers:
-        heading: 'บริการค้นหา IP'
-        help: 'เลือกบริการสำหรับการค้นหา IP บางบริการมีข้อจำกัดด้านจำนวนครั้ง กรุณาตรวจสอบเอกสารของบริการนั้นก่อนใช้งาน'
-      quota_label: โควต้าการค้นหา
+        heading: 'บริการตรวจสอบที่อยู่ IP'
+        help: 'เลือกผู้ให้บริการที่จะใช้ในการค้นหาและระบุตำแหน่งของที่อยู่ IP บางบริการมีการจำกัดอัตราความถี่ในการเข้าถึง โปรดตรวจสอบรายละเอียดและเงื่อนไขของผู้ให้บริการนั้นๆ'
+      quota_label: โควตาการเรียกใช้งาน
       raw_http_response_label: 'Raw HTTP Response Body'
       request_options_label: 'Request Options'
       request_url_label: 'Request URL'
       response_headers_label: 'Response Headers'
-      service_ipapi-pro_description: 'ใช้ <b>https://members.ip-api.com/#pricing</b> plan Pro ใช้งานได้ไม่จำกัด'
+      service_ipapi-pro_description: 'ใช้บริการของ <b>https://members.ip-api.com/#pricing</b> ซึ่งแพ็กเกจ Pro จะไม่จำกัดจำนวนครั้งการใช้งาน'
       service_ipapi-pro_label: 'IP Api Pro'
-      service_ipapi_description: 'ใช้ <b>http://ip-api.com</b> เพื่อค้นหาได้สูงสุด 45 ครั้งต่อนาทีฟรี หากเกินกว่านั้น request จะถูก queue ไว้จนกว่าจะรีเซ็ตช่วงเวลา'
+      service_ipapi_description: 'ใช้บริการของ <b>http://ip-api.com</b> เพื่อค้นหาฟรีสูงสุด 45 ครั้งต่อนาที หากใช้เกินจำนวนคำขอจะถูกจัดคิวไว้และประมวลผลเมื่อเวลาเริ่มนับใหม่'
       service_ipapi_label: 'IP Api'
-      service_ipdata_description: 'ใช้ <b>https://ipdata.co</b> เพื่อค้นหาได้สูงสุด 1,500 ครั้งต่อวันฟรี หรือสมัคร plan แบบชำระเงินเพื่อเพิ่มจำนวนครั้ง'
+      service_ipdata_description: 'ใช้บริการของ <b>https://ipdata.co</b> เพื่อค้นหาฟรีสูงสุด 1,500 ครั้งต่อวัน หรือมีแพ็กเกจแบบชำระเงินสำหรับการจำกัดการใช้งานที่สูงกว่า'
       service_ipdata_label: IPData
-      service_ipinfo-lite_description: 'ใช้ <b>https://ipinfo.io</b> เพื่อดึงข้อมูล IP โดยไม่มีข้อจำกัดด้านจำนวนครั้ง ต้องลงทะเบียนเพื่อรับ API key ฟรี'
+      service_ipinfo-lite_description: 'ใช้บริการของ <b>https://ipinfo.io</b> เพื่อเรียกดูข้อมูล IP โดยไม่มีการจำกัดจำนวนครั้งหรือความถี่ในการค้นหา จำเป็นต้องสมัครสมาชิกเพื่อรับรหัส API Key ฟรี'
       service_ipinfo-lite_label: 'IPInfo Lite'
-      service_iplocation_description: 'ใช้ <b>https://www.iplocation.net/</b> เพื่อดึงข้อมูลประเทศและ ISP ไม่ทราบข้อจำกัดด้านจำนวนครั้ง'
+      service_iplocation_description: 'ใช้บริการของ <b>https://www.iplocation.net/</b> เพื่อตรวจสอบประเทศและผู้ให้บริการอินเทอร์เน็ต (ISP) ไม่ระบุขีดจำกัดความถี่การใช้งาน'
       service_iplocation_label: 'IP Location'
-      service_ipsevenex_description: 'ใช้ <b>https://7x.ax</b> เพื่อรับ API key ฟรีสำหรับสูงสุด 20 request ต่อนาที หรือสมัคร plan แบบชำระเงินเพื่อเพิ่มจำนวนครั้ง'
+      service_ipsevenex_description: 'ใช้บริการของ <b>https://7x.ax</b> เพื่อรับสิทธิ์ API Key ฟรีสำหรับค้นหาได้สูงสุด 20 ครั้งต่อนาที หรือมีแพ็กเกจแบบชำระเงินสำหรับการจำกัดการใช้งานที่สูงกว่า'
       service_ipsevenex_label: '7x Geolocation API'
-      service_label: บริการ
-      show_flag_help: 'โดยไม่เปิดเผย IP address แสดง flag ของประเทศตาม IP ของผู้เขียน post เมื่อผู้ใช้เปิดใช้งานในการตั้งค่า'
-      show_flag_label: 'แสดง flag ของประเทศในแต่ละ post'
-      status_error: '✗ ผิดพลาด'
+      service_label: ผู้ให้บริการ
+      show_flag_help: 'แสดงธงชาติของประเทศตาม IP address ของผู้เขียนโพสต์โดยไม่เปิดเผยตัวที่อยู่ IP จริง เมื่อผู้ใช้ยินยอมในการตั้งค่าส่วนตัว'
+      show_flag_label: แสดงธงชาติในแต่ละโพสต์
+      status_error: '✗ เกิดข้อผิดพลาด'
       status_success: '✓ สำเร็จ'
-      status_unknown: ไม่ทราบ
+      status_unknown: ไม่ทราบสถานะ
       test:
         heading: ทดสอบการตั้งค่าบริการ
-        help: 'ทดสอบการตั้งค่าบริการค้นหา IP ด้วย IP address ตัวอย่าง บันทึกการตั้งค่าก่อนทำการทดสอบ'
-      test_button: ทดสอบบริการ
-      test_error: เกิดข้อผิดพลาดขณะทดสอบบริการ
+        help: 'ทดสอบการกำหนดค่าบริการค้นหาที่อยู่ IP ด้วยตัวอย่าง IP address โปรดบันทึกการตั้งค่าก่อนทำการกดปุ่มทดสอบ'
+      test_button: ทดสอบระบบ
+      test_error: 'เกิดข้อผิดพลาดในการเชื่อมต่อบริการค้นหา IP'
       test_error_details_label: 'รายละเอียดข้อผิดพลาด:'
       test_http_status_code_label: 'HTTP Status Code:'
-      test_ip_required: 'กรุณาใส่ IP address เพื่อทดสอบ'
-      test_processed_service_response_label: 'ผลลัพธ์จากบริการ:'
+      test_ip_required: 'โปรดระบุที่อยู่ IP เพื่อทดสอบ'
+      test_processed_service_response_label: 'ผลลัพธ์ข้อมูลที่ได้รับ:'
       test_response_time_label: 'เวลาตอบสนอง:'
-      test_result_title: ผลการทดสอบ
-      test_service_help: 'ใส่ IPv4 หรือ IPv6 address เพื่อทดสอบการตั้งค่าบริการปัจจุบัน'
-      test_service_label: 'ทดสอบบริการค้นหา IP'
-      test_service_label_result: 'บริการ:'
+      test_result_title: ผลลัพธ์การทดสอบ
+      test_service_help: 'ระบุที่อยู่ IPv4 หรือ IPv6 เพื่อทดสอบการตั้งค่าระบบของผู้ให้บริการที่เลือกในปัจจุบัน'
+      test_service_label: 'ทดสอบระบบค้นหา IP'
+      test_service_label_result: 'ผู้ให้บริการ:'
       test_status_label: 'สถานะ:'
-      test_timestamp_label: 'Timestamp:'
+      test_timestamp_label: 'เวลาการตรวจสอบ:'
       testing: กำลังทดสอบ...
   forum:
     user:
       settings:
-        custom_flag_help: 'เลือก flag ของประเทศเพื่อแสดงใน post ของคุณ flag นี้จะมองเห็นได้สำหรับทุกคนและจะแทนที่ flag ที่อ้างอิงจาก IP address ของคุณ'
-        custom_flag_label: 'Flag ประเทศที่กำหนดเอง'
-        ip_country: 'แสดง flag ของประเทศที่ฉัน post จาก ตาม IP address'
+        custom_flag_help: 'เลือกธงชาติเพื่อแสดงบนโพสต์ของคุณ ธงชาตินี้จะแสดงให้ทุกคนเห็นแทนที่ธงชาติที่ประเมินจาก IP address จริงของคุณ'
+        custom_flag_label: กำหนดธงชาติของตัวเอง
+        ip_country: 'แสดงธงชาติของประเทศที่ฉันส่งโพสต์ อิงตามที่อยู่ IP ของฉัน'
   lib:
     alerts:
-      ip_copied: 'คัดลอก IP Address แล้ว'
-    copy_ip_label: 'คัดลอก IP ไปยัง clipboard'
+      ip_copied: 'คัดลอก IP Address เรียบร้อยแล้ว'
+    copy_ip_label: 'คัดลอก IP ไปยังคลิปบอร์ด'
     custom_flag:
-      none: 'ไม่มี flag ที่กำหนดเอง'
+      none: ไม่ระบุธงชาติส่วนตัว
     map_button_label: 'ข้อมูล IP'
     map_modal:
-      as: ASN
+      as: 'หมายเลขอ้างอิงเครือข่าย (ASN)'
       country_code: รหัสประเทศ
-      error: ข้อผิดพลาด
+      error: เกิดข้อผิดพลาด
       ip_address: 'IP Address'
-      isp: ISP
-      mobile: เครือข่ายมือถือ
-      not_enough_data: ข้อมูลไม่เพียงพอสำหรับการแสดงแผนที่
-      organization: องค์กร
-      threat_level: ระดับภัยคุกคาม
+      isp: 'ผู้ให้บริการอินเทอร์เน็ต (ISP)'
+      mobile: 'เครือข่ายมือถือ (Cellular)'
+      not_enough_data: ข้อมูลพิกัดไม่เพียงพอที่จะแสดงบนแผนที่ได้
+      organization: องค์กร/หน่วยงาน
+      threat_level: ระดับความเสี่ยงภัยคุกคาม
       threat_types: ประเภทภัยคุกคาม
-      title: 'ข้อมูล IP'
+      title: 'รายละเอียดที่อยู่ IP'
       zip_code: รหัสไปรษณีย์

@@ -6,14 +6,14 @@ fof-passport:
   admin:
     popup:
       field:
-        app-auth-url: 'OAuth authorization URL'
-        app-id: 'OAuth application ID'
-        app-scopes: 'OAuth scopes ที่ต้องการขอ'
-        app-secret: 'OAuth application secret'
-        app-token-url: 'OAuth token URL'
-        app-user-url: 'API URL สำหรับดึงข้อมูลผู้ใช้เมื่อยืนยันตัวตนแล้ว'
-        button-icon: 'ไอคอนปุ่ม login'
-        button-title: 'ป้ายชื่อปุ่ม login'
+        app-auth-url: 'ที่อยู่ลิงก์ขออนุญาตสิทธิ์ (OAuth Authorization URL)'
+        app-id: 'รหัสแอปพลิเคชัน (OAuth Client ID / App ID)'
+        app-scopes: 'ขอบเขตสิทธิ์การใช้งานที่ต้องการขอ (OAuth Scopes)'
+        app-secret: 'รหัสลับแอปพลิเคชัน (OAuth Client Secret / App Secret)'
+        app-token-url: 'ที่อยู่ลิงก์ขอโทเค็น (OAuth Token URL)'
+        app-user-url: 'ที่อยู่ลิงก์ API สำหรับดึงข้อมูลรายละเอียดผู้ใช้ (User Details API URL)'
+        button-icon: ไอคอนสำหรับปุ่มเข้าสู่ระบบ
+        button-title: 'ข้อความบนปุ่มเข้าสู่ระบบ (Button Label)'
         button-title-placeholder: '=> fof-passport.api.default-login-button-title'
   api:
     default-login-button-title: '=> core.ref.log_in'

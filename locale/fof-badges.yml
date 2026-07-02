@@ -4,55 +4,55 @@
 
 fof-badges:
   admin:
-    actions: badge
-    active: ใช้งาน
-    add_to_group: เพิ่ม
-    add_to_group_help: เพิ่ม
+    actions: การดำเนินการเมื่อได้รับเหรียญตรา
+    active: ใช้งานอยู่
+    add_to_group: เพิ่มผู้ใช้เข้าสู่กลุ่ม
+    add_to_group_help: เพิ่มผู้ใช้เข้าสู่กลุ่มนี้โดยอัตโนมัติเมื่อพวกเขาได้รับเหรียญตรา
     appearance: ลักษณะที่ปรากฏ
-    assign: กำหนด
-    assign_badge: badge
-    assign_reason: ตัวเลือก
-    assign_reason_help: ผู้ใช้
-    assign_reason_placeholder: badge
+    assign: มอบให้
+    assign_badge: 'มอบ: {badge}'
+    assign_reason: 'เหตุผล (ระบุหรือไม่ก็ได้)'
+    assign_reason_help: เหตุผลนี้จะปรากฏให้เห็นบนหน้าเหรียญตราของผู้ใช้
+    assign_reason_placeholder: 'ทำไมถึงมอบเหรียญตรานี้?'
     automatic: อัตโนมัติ
-    background_color: ย้อนกลับ
-    badge_assigned: ชื่อ
+    background_color: สีพื้นหลัง
+    badge_assigned: 'มอบเหรียญตรา "{badge}" ให้กับ {username} เรียบร้อยแล้ว!'
     badge_category: หมวดหมู่
-    badge_count: badge
+    badge_count: '{count, plural, one {เหรียญตรา # ชิ้น} other {เหรียญตรา # ชิ้น}}'
     badge_description: คำอธิบาย
-    badge_description_placeholder: badge
+    badge_description_placeholder: อธิบายวิธีการได้รับเหรียญตรานี้...
     badge_name: ชื่อ
-    badge_name_placeholder: post
-    badge_revoked: ตกลง
-    badge_slug: slug
-    badge_slug_help: ชื่อ
-    badge_slug_placeholder: post
+    badge_name_placeholder: 'เช่น "เซียนตอบโพสต์ 100 โพสต์"'
+    badge_revoked: 'เพิกถอนเหรียญตรา "{badge}" จาก {username} เรียบร้อยแล้ว'
+    badge_slug: 'สลัก (Slug)'
+    badge_slug_help: 'ตัวระบุที่เข้าใจง่ายใน URL จะถูกสร้างโดยอัตกโนมัติจากชื่อหากเว้นว่างไว้'
+    badge_slug_placeholder: 'เช่น "100-posts-master"'
     cancel: ยกเลิก
     category_description: คำอธิบาย
-    category_description_placeholder: หมวดหมู่
+    category_description_placeholder: อธิบายหมวดหมู่เหรียญตรานี้...
     category_enabled: เปิดใช้งาน
-    category_enabled_help: ปิดใช้งาน
+    category_enabled_help: หมวดหมู่และเหรียญตราที่ถูกปิดการใช้งานจะไม่แสดงในหน้ารวมเหรียญตรา
     category_name: ชื่อ
-    category_name_placeholder: badge
-    category_slug: slug
-    category_slug_help: URL
-    category_slug_placeholder: achievements
-    clear_selection: เลือก
-    create_badge: สร้าง
-    create_category: สร้าง
+    category_name_placeholder: 'เช่น "เหรียญตราความสำเร็จ"'
+    category_slug: 'สลัก (Slug)'
+    category_slug_help: 'ตัวระบุหมวดหมู่ที่เข้าใจง่ายใน URL'
+    category_slug_placeholder: 'เช่น "achievements"'
+    clear_selection: ล้างการเลือก
+    create_badge: สร้างเหรียญตรา
+    create_category: สร้างหมวดหมู่
     delete: ลบ
-    delete_badge_confirm: ลบ
-    delete_category_confirm: ลบ
-    delete_category_confirm_with_badges: ลบ
+    delete_badge_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการลบเหรียญตรา "{name}"? การดำเนินการนี้จะนำเหรียญตรานี้ออกจากผู้ใช้ทุกคนที่เคยได้รับด้วย'
+    delete_category_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่ "{name}"?'
+    delete_category_confirm_with_badges: 'คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่ "{name}"? เหรียญตราจำนวน {count, plural, one {# ชิ้น} other {# ชิ้น}} จะกลายเป็นแบบไม่มีหมวดหมู่'
     disabled: ปิดใช้งาน
-    earned_count: จำนวน
+    earned_count: 'ได้รับแล้ว {count} คน'
     edit: แก้ไข
-    edit_badge: แก้ไข
-    edit_category: แก้ไข
+    edit_badge: แก้ไขเหรียญตรา
+    edit_category: แก้ไขหมวดหมู่
     enabled: เปิดใช้งาน
-    granted_by_system: System
+    granted_by_system: ระบบอัตโนมัติ
     headers:
-      badges: badge
+      badges: เหรียญตรา
       description: คำอธิบาย
       earned: ได้รับแล้ว
       icon: ไอคอน
@@ -61,253 +61,253 @@ fof-badges:
       rarity: ความหายาก
       status: สถานะ
       type: ประเภท
-    icon_color: สี
+    icon_color: สีไอคอน
     icon_picker:
-      collapse: ซ่อน
-      expand: แสดง
-      hint: เลือก
+      collapse: ซ่อนตัวเลือกไอคอน
+      expand: แสดงตัวเลือกไอคอน
+      hint: 'คลิกเลือกไอคอน หรือพิมพ์ชื่อคลาส Font Awesome ด้านบน'
     inactive: ไม่ใช้งาน
-    install_defaults: ติดตั้ง
-    install_defaults_error: ติดตั้ง
-    install_defaults_success: ติดตั้ง
-    is_active: ใช้งาน
-    is_active_help: ใช้งาน
-    is_visible: badge
-    is_visible_help: ผู้ใช้
-    manual: ตามด้วยมือ
+    install_defaults: ติดตั้งเหรียญตราเริ่มต้น
+    install_defaults_error: ติดตั้งเหรียญตราเริ่มต้นล้มเหลว
+    install_defaults_success: ติดตั้งเหรียญตราเริ่มต้นสำเร็จ!
+    is_active: เปิดใช้งาน
+    is_active_help: เหรียญตราที่ปิดการใช้งานจะไม่ถูกมอบให้ผู้ใช้โดยอัตโนมัติ
+    is_visible: แสดงในรายการเหรียญตรา
+    is_visible_help: 'เหรียญตราที่ซ่อนอยู่จะไม่แสดงในหน้ารวมเหรียญตราสาธารณะ แต่ผู้ใช้ยังคงสามารถได้รับตามเงื่อนไข'
+    manual: มอบด้วยตนเอง
     metrics:
       best_answers_received: ได้รับคำตอบที่ดีที่สุด
-      discussion_count: เริ่ม
-      downvotes_given: 'ให้ Downvote'
-      downvotes_received: 'ได้รับ Downvote'
-      edit_count: แก้ไข
+      discussion_count: โพสต์ที่สร้าง
+      downvotes_given: คะแนนโหวตลงที่ให้
+      downvotes_received: คะแนนโหวตลงที่ได้รับ
+      edit_count: โพสต์ที่แก้ไข
       files_uploaded: ไฟล์ที่อัปโหลด
-      has_avatar: avatar
-      has_bio: 'มี Bio'
-      has_nickname: ชื่อ
-      likes_given: likes
-      likes_received: likes
-      member_days: สมาชิก
-      polls_created: 'สร้าง Poll'
-      polls_voted: 'โหวต Poll'
-      post_count: จำนวน
-      private_discussions_created: สร้างโพสต์ส่วนตัว
-      reactions_given: 'ให้ Reaction'
-      reactions_received: 'ได้รับ Reaction'
-      tag_posts: tag
-      upvotes_given: 'ให้ Upvote'
-      upvotes_received: 'ได้รับ Upvote'
-    move_down: ลง
-    move_up: ขึ้น
+      has_avatar: 'มีรูปโปรไฟล์ (Avatar)'
+      has_bio: 'มีคำแนะนำตัว (Bio)'
+      has_nickname: 'มีชื่อเล่น (Nickname)'
+      likes_given: ไลก์ที่ให้
+      likes_received: ไลก์ที่ได้รับ
+      member_days: จำนวนวันที่เป็นสมาชิก
+      polls_created: โพลที่สร้าง
+      polls_voted: โพลที่โหวต
+      post_count: จำนวนโพสต์
+      private_discussions_created: โพสต์ส่วนตัวที่สร้าง
+      reactions_given: รีแอคชันที่ให้
+      reactions_received: รีแอคชันที่ได้รับ
+      tag_posts: โพสต์ในแท็ก
+      upvotes_given: คะแนนโหวตขึ้นที่ให้
+      upvotes_received: คะแนนโหวตขึ้นที่ได้รับ
+    move_down: เลื่อนลง
+    move_up: เลื่อนขึ้น
     next: ถัดไป
-    no_badges: สร้าง
-    no_categories: สร้าง
+    no_badges: 'ยังไม่มีเหรียญตราในขณะนี้ มาสร้างเหรียญตราแรกของคุณกันเลย!'
+    no_categories: 'ยังไม่มีหมวดหมู่ในขณะนี้ มาสร้างหมวดหมู่แรกของคุณกันเลย!'
     no_category: ไม่มีหมวดหมู่
-    no_group: เพิ่ม
-    no_holders: 'ไม่มีใครได้รับ badge นี้เลย'
-    no_holders_found: ค้นหา
-    no_users_found: ไม่
+    no_group: ไม่เพิ่มเข้าสู่กลุ่ม
+    no_holders: ยังไม่มีใครได้รับเหรียญตรานี้
+    no_holders_found: ไม่พบผู้ใช้ที่ตรงกับการค้นหาของคุณ
+    no_users_found: ไม่พบผู้ใช้
     permissions:
-      give_manually: badge
-      moderate: badge
-      view_list: ดู
-      view_user_badges: ดู
-    preview: ดู
+      give_manually: มอบเหรียญตราด้วยตัวเอง
+      moderate: จัดการเหรียญตรา
+      view_list: ดูรายการเหรียญตรา
+      view_user_badges: ดูเหรียญตราของผู้ใช้
+    preview: ตัวอย่าง
     previous: ก่อนหน้า
-    rarity: 'ความหายากของ badge'
+    rarity: 'ความหายาก {percent}%'
     recalculate: คำนวณใหม่
-    recalculate_confirm: ดำเนินการต่อ
-    recalculate_error: ล้มเหลว
-    recalculate_success: ตกลง
+    recalculate_confirm: 'การดำเนินการนี้จะคำนวณเหรียญตราอัตโนมัติทั้งหมดสำหรับผู้ใช้ทุกคน กระบวนการนี้จะทำงานในเบื้องหลัง ต้องการดำเนินการต่อหรือไม่?'
+    recalculate_error: 'คำนวณเหรียญตราใหม่ล้มเหลว โปรดลองอีกครั้ง'
+    recalculate_success: 'คำนวณใหม่เสร็จสิ้น! มอบให้: {awarded}, เพิกถอน: {revoked}, ประมวลผลผู้ใช้แล้ว: {users}'
     recalculate_tab:
-      all_badges: badge
-      badge_help: เลือก
-      badge_label: badge
-      badges_to_check: badge
-      chunk_size_help: ผู้ใช้
-      chunk_size_label: ขนาด
+      all_badges: เหรียญตราอัตโนมัติทั้งหมด
+      badge_help: 'เลือกเหรียญตราเฉพาะเจาะจง หรือคำนวณเหรียญตราอัตโนมัติทั้งหมดใหม่'
+      badge_label: เหรียญตราที่จะคำนวณใหม่
+      badges_to_check: เหรียญตราที่จะตรวจสอบ
+      chunk_size_help: 'จำนวนผู้ใช้ที่จะประมวลผลต่องาน กลุ่มข้อมูลขนาดเล็กจะมีความเสถียรมากกว่าแต่จะใช้เวลารวมนานกว่า'
+      chunk_size_label: 'ขนาดกลุ่มข้อมูล (Chunk size)'
       default: ค่าเริ่มต้น
-      estimated_chunks: ชุดข้อมูลโดยประมาณ
-      info: ย้อนกลับ
-      jobs_empty: ไม่
-      jobs_title: ถึง
-      no_automatic_badges: สร้าง
-      no_revoke_help: เปิดใช้งาน
-      no_revoke_label: ตกลง
-      reapply_actions_help: เพิ่ม
-      reapply_actions_label: ใช้
-      show_more: แสดง
-      start: เริ่ม
-      sync_counts: badge
-      sync_counts_error: ล้มเหลว
-      sync_counts_info: ผู้ใช้
-      sync_counts_success: badge
-      sync_counts_title: badge
-      title: เริ่ม
-      total_users: ผู้ใช้
+      estimated_chunks: จำนวนกลุ่มข้อมูลโดยประมาณ
+      info: 'กระบวนการคำนวณใหม่จะประมวลผลผู้ใช้ทีละกลุ่มข้อมูล เพื่อป้องกันปัญหางานเบื้องหลังหมดเวลา แต่ละกลุ่มข้อมูลจะรันเป็นงานเบื้องหลังแยกกัน'
+      jobs_empty: ยังไม่มีประวัติการคำนวณใหม่
+      jobs_title: ประวัติการทำงาน
+      no_automatic_badges: 'ยังไม่มีการตั้งค่าเหรียญตราอัตโนมัติ โปรดสร้างเหรียญตราพร้อมเงื่อนไขการทำงานก่อน'
+      no_revoke_help: 'หากเปิดใช้งาน ผู้ใช้ที่ไม่ผ่านเกณฑ์อีกต่อไปจะยังคงได้รับอนุญาตให้เก็บเหรียญตราเดิมไว้ได้'
+      no_revoke_label: ไม่ต้องเพิกถอนเหรียญตราที่มีอยู่
+      reapply_actions_help: 'หากเปิดใช้งาน การดำเนินการเกี่ยวกับเหรียญตรา (เช่น การเพิ่มเข้ากลุ่ม) จะถูกนำมาใช้อีกครั้งกับผู้ใช้ที่ได้รับเหรียญตรานี้อยู่แล้ว มีประโยชน์เมื่อคุณเพิ่มการดำเนินการใหม่ๆ ให้กับเหรียญตราเดิม'
+      reapply_actions_label: ใช้การดำเนินการซ้ำกับผู้ถือเหรียญตราเดิม
+      show_more: 'แสดงเพิ่มอีก {count} รายการ'
+      start: เริ่มการคำนวณใหม่
+      sync_counts: ซิงค์จำนวนเหรียญตรา
+      sync_counts_error: ไม่สามารถซิงค์จำนวนเหรียญตราได้
+      sync_counts_info: 'คำนวณ "จำนวนที่ถูกรับไปแล้ว" ของเหรียญตราทั้งหมดใหม่ตามจริงจากตารางประวัติผู้ใช้ ใช้ตัวเลือกนี้หากจำนวนแสดงไม่ถูกต้องหลังจากการคำนวณใหม่'
+      sync_counts_success: 'ซิงค์จำนวนเหรียญตราสำเร็จ! แก้ไขจำนวนที่คลาดเคลื่อน {corrected} จาก {total} เหรียญตรา'
+      sync_counts_title: ซิงค์จำนวนเหรียญตรา
+      title: เริ่มคำนวณใหม่
+      total_users: ผู้ใช้ทั้งหมด
     recalculation:
-      already_running: อ่าน
-      auto_refresh_off: รีเฟรช
-      auto_refresh_on: รีเฟรช
+      already_running: กำลังดำเนินการคำนวณเหรียญตราใหม่อยู่แล้วในขณะนี้
+      auto_refresh_off: รีเฟรชอัตโนมัติ
+      auto_refresh_on: เปิดการรีเฟรชอัตโนมัติ
       cancel: ยกเลิก
-      cancel_confirm: ยกเลิก
-      cancel_error: ยกเลิก
-      cancelled: ยกเลิก
-      chunks: ทั้งหมด
-      completed: เสร็จสิ้น
-      dismiss: ปิด
-      failed: ล้มเหลว
-      pending: รอดำเนินการ
-      progress: tag
-      running: 'กำลังคำนวณ badge'
-      started: ย้อนกลับ
-      stats: ตกลง
+      cancel_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการยกเลิกการคำนวณใหม่? ความคืบหน้าจะสูญหาย'
+      cancel_error: ไม่สามารถยกเลิกการคำนวณใหม่ได้
+      cancelled: ยกเลิกการคำนวณใหม่แล้ว
+      chunks: 'กลุ่มข้อมูล: {processed} / {total}'
+      completed: คำนวณใหม่เสร็จสิ้น!
+      dismiss: ปิดการแจ้งเตือน
+      failed: คำนวณใหม่ล้มเหลว
+      pending: กำลังเตรียมการคำนวณใหม่...
+      progress: 'ประเมินผลแล้ว {processed} / {total} รายการ ({percentage}%)'
+      running: กำลังคำนวณเหรียญตราใหม่...
+      started: 'เริ่มการคำนวณเหรียญตราใหม่แล้ว โดยจะทำงานในเบื้องหลัง'
+      stats: 'มอบให้: {awarded} | เพิกถอน: {revoked}'
     recalculation_jobs:
       button: งาน
       cancel: ยกเลิก
-      cancel_error: ยกเลิก
-      cancelled: ยกเลิก
-      empty: ไม่
-      force_cancel: ยกเลิก
-      mark_failed: ล้มเหลว
-      mark_failed_error: ล้มเหลว
-      marked_failed: ล้มเหลว
-      results: ตกลง
+      cancel_error: ไม่สามารถยกเลิกงานได้
+      cancelled: ยกเลิกงานสำเร็จแล้ว
+      empty: ไม่พบงานคำนวณใหม่
+      force_cancel: บังคับยกเลิก
+      mark_failed: ทำเครื่องหมายเป็นล้มเหลว
+      mark_failed_error: ไม่สามารถทำเครื่องหมายงานเป็นล้มเหลวได้
+      marked_failed: ทำเครื่องหมายงานเป็นล้มเหลวแล้ว
+      results: 'มอบให้: {awarded} | เพิกถอน: {revoked}'
       status:
-        cancelled: ยกเลิก
+        cancelled: ยกเลิกแล้ว
         completed: เสร็จสิ้น
         failed: ล้มเหลว
         pending: รอดำเนินการ
-        running: เรียกใช้
+        running: กำลังทำงาน
       stuck: ติดขัด
       title: งานคำนวณใหม่
-      users: ทั้งหมด
-    revoke: ตกลง
-    revoke_confirm: ตกลง
-    revoke_error: ตกลง
+      users: 'ประเมินผลแล้ว {processed} / {total} รายการ'
+    revoke: เพิกถอน
+    revoke_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการเพิกถอนเหรียญตรา "{badge}" จาก {username}?'
+    revoke_error: ไม่สามารถเพิกถอนเหรียญตราได้
     save: บันทึก
-    search_holders_placeholder: ค้นหา
-    search_user_placeholder: ค้นหา
-    select_user: เลือก
-    send_notification: ไม่
+    search_holders_placeholder: ค้นหาผู้ถือเหรียญตรา...
+    search_user_placeholder: ค้นหาจากชื่อผู้ใช้หรือชื่อที่แสดง...
+    select_user: เลือกผู้ใช้
+    send_notification: ส่งการแจ้งเตือนไปยังผู้ใช้
     settings:
-      display_title: ตั้งค่า
-      integrations_help: ติดตั้ง
-      integrations_title: extension
-      new_badge_highlight: แสดง
-      new_badge_highlight_help: tag
-      post_badge_display_limit: badge
-      post_badge_display_limit_help: แสดง
-      primary_badge_display: badge
-      primary_badge_display_help: ถัดไป
+      display_title: ตั้งค่าการแสดงผล
+      integrations_help: 'ตัววัดเหรียญตราที่ขึ้นอยู่กับส่วนขยายอื่น ติดตั้งส่วนขยายที่เกี่ยวข้องเพื่อปลดล็อกการใช้งานตัววัดนี้'
+      integrations_title: การเชื่อมต่อส่วนขยาย
+      new_badge_highlight: 'แสดงแท็ก "ใหม่" บนเหรียญตราที่เพิ่งได้รับ'
+      new_badge_highlight_help: 'แสดงแท็ก "ใหม่" บนเหรียญตราที่ได้รับภายใน 7 วันที่ผ่านมา'
+      post_badge_display_limit: ขีดจำกัดการแสดงเหรียญตราใต้โพสต์
+      post_badge_display_limit_help: 'จำนวนเหรียญตราสูงสุดที่จะแสดงใต้โพสต์ ตั้งค่าเป็น 0 เพื่อปิดใช้งาน'
+      primary_badge_display: การแสดงผลเหรียญตราหลัก
+      primary_badge_display_help: วิธีการแสดงเหรียญตราหลักของผู้ใช้ข้างชื่อผู้ใช้
       primary_badge_hidden: ซ่อน
       primary_badge_icon: ไอคอนเท่านั้น
-      primary_badge_icon_name: ชื่อ
-      save: บันทึก
-      save_error: บันทึก
-      saved: บันทึก
-      show_badges_on_user_card: แสดง
-      show_badges_on_user_card_help: ผู้ใช้
-    showing_holders: แสดง
+      primary_badge_icon_name: ไอคอนและชื่อ
+      save: บันทึกการตั้งค่า
+      save_error: ไม่สามารถบันทึกการตั้งค่าได้
+      saved: บันทึกการตั้งค่าสำเร็จ
+      show_badges_on_user_card: แสดงเหรียญตราบนการ์ดผู้ใช้
+      show_badges_on_user_card_help: แสดงเหรียญตราที่โปรดปรานหรือหายากที่สุดของผู้ใช้บนการ์ดผู้ใช้และหน้าโปรไฟล์
+    showing_holders: 'แสดง {from}-{to} จากทั้งหมด {total} รายการ'
     status: สถานะ
-    tab_assign: กำหนด
-    tab_holders: จำนวน
+    tab_assign: มอบให้
+    tab_holders: 'ผู้ถือเหรียญตรา ({count})'
     tabs:
-      badges: badge
+      badges: เหรียญตรา
       categories: หมวดหมู่
       recalculation: คำนวณใหม่
       settings: ตั้งค่า
     trigger_builder:
-      add_condition: เพิ่ม
-      and: ทั้งหมด
-      and_help: ผู้ใช้
-      date_end: วันที่
-      date_range_help: badge
-      date_start: เริ่ม
-      loading_tags: กำลังโหลด
-      logic: เมื่อมีเงื่อนไขหลายรายการ
-      no_conditions_info: ไม่
-      or: match
-      or_help: ผู้ใช้
-      remove_condition: นำออก
-      select_tag: เลือก
-      tag_filter: กรอง
-      tag_filter_help: tag
-      use_date_range: ถึง
-    trigger_config: ถึง
-    trigger_config_help: badge
-    uncategorized: ไม่จัดหมวดหมู่
+      add_condition: เพิ่มเงื่อนไข
+      and: 'ต้องตรงตามเงื่อนไขทั้งหมด (AND)'
+      and_help: ผู้ใช้ต้องตรงตามเงื่อนไขทุกข้อพร้อมกันเพื่อรับเหรียญตรานี้
+      date_end: วันที่สิ้นสุด
+      date_range_help: 'นับกิจกรรมเฉพาะในช่วงเวลานี้เท่านั้น มีประโยชน์สำหรับเหรียญตรากิจกรรมพิเศษ'
+      date_start: วันที่เริ่มต้น
+      loading_tags: กำลังโหลดแท็ก...
+      logic: เมื่อมีหลายเงื่อนไข
+      no_conditions_info: 'ไม่มีการตั้งเงื่อนไข เหรียญตรานี้จะมอบให้ด้วยตนเองโดยผู้ดูแลระบบเท่านั้น'
+      or: 'ตรงตามเงื่อนไขใดเงื่อนไขหนึ่งก็พอ (OR)'
+      or_help: ผู้ใช้ตรงตามเงื่อนไขอย่างน้อยหนึ่งข้อก็เพียงพอในการรับเหรียญตรานี้
+      remove_condition: นำเงื่อนไขออก
+      select_tag: เลือกแท็ก...
+      tag_filter: ตัวกรองแท็ก
+      tag_filter_help: 'จำเป็นต้องระบุเมื่อใช้ตัววัด "จำนวนโพสต์ในแท็ก"'
+      use_date_range: จำกัดเฉพาะช่วงเวลา
+    trigger_config: ตัวกระตุ้นอัตโนมัติ
+    trigger_config_help: 'กำหนดเงื่อนไขสำหรับมอบเหรียญตราโดยอัตโนมัติ เว้นว่างไว้หากต้องการให้เป็นเหรียญตราแบบมอบด้วยตนเองเท่านั้น'
+    uncategorized: ไม่ได้จัดหมวดหมู่
     validation:
-      tag_required: เลือก
+      tag_required: 'คุณต้องเลือกแท็กเมื่อใช้งานตัววัด "จำนวนโพสต์ในแท็ก"'
   forum:
-    all_badges: badge
-    badges_subtitle: badge
-    badges_title: badge
-    earned_by: ผู้ใช้
-    earned_users: ได้รับโดย
-    loading: กำลังโหลด
-    more_users_earned: ผู้ใช้
-    my_badges: badge
+    all_badges: เหรียญตราทั้งหมด
+    badges_subtitle: สะสมเหรียญตราจากการมีส่วนร่วมในชุมชนของเรา!
+    badges_title: เหรียญตรา
+    earned_by: '{count, plural, one {ได้รับแล้ว # คน} other {ได้รับแล้ว # คน}}'
+    earned_users: ผู้ได้รับเหรียญตรา
+    loading: กำลังโหลด...
+    more_users_earned: และผู้ใช้อีก...
+    my_badges: เหรียญตราของฉัน
     nav:
-      badges: badge
+      badges: เหรียญตรา
     new_tag: ใหม่
-    no_badges: ไม่
-    no_users_earned: ไม่
+    no_badges: ยังไม่มีเหรียญตราในขณะนี้
+    no_users_earned: 'ยังไม่มีใครได้รับเหรียญตรานี้ เป็นคนแรกเลยสิ!'
     notification:
-      a_badge: badge
-      badge_earned: badge
-    other_badges: badge
-    owned_badge: badge
-    toggle_category_dropdown: หมวดหมู่
+      a_badge: เหรียญตรา
+      badge_earned: 'คุณได้รับเหรียญตรา {badge}'
+    other_badges: เหรียญตราอื่นๆ
+    owned_badge: คุณครอบครองเหรียญตรานี้อยู่
+    toggle_category_dropdown: สลับการแสดงผลหมวดหมู่
     user:
-      assign_badge: badge
-      assign_badge_title: ชื่อ
-      assign_button: badge
-      assign_reason: ตัวเลือก
-      assign_reason_help: ผู้ใช้
-      assign_reason_placeholder: badge
-      badge_actions: badge
-      badge_assigned: ชื่อ
-      badge_revoked: ตกลง
-      badges_count: badge
-      badges_tab: badge
-      badges_title: ชื่อ
+      assign_badge: มอบเหรียญตรา
+      assign_badge_title: 'มอบเหรียญตราให้ {username}'
+      assign_button: มอบเหรียญตรา
+      assign_reason: 'เหตุผล (ระบุหรือไม่ก็ได้)'
+      assign_reason_help: เหตุผลนี้จะปรากฏให้เห็นบนหน้าเหรียญตราของผู้ใช้
+      assign_reason_placeholder: 'ทำไมถึงมอบเหรียญตรานี้?'
+      badge_actions: การจัดการเหรียญตรา
+      badge_assigned: 'มอบเหรียญตรา "{badge}" ให้ {username} สำเร็จแล้ว!'
+      badge_revoked: 'เพิกถอนเหรียญตรา "{badge}" เรียบร้อยแล้ว'
+      badges_count: '{count, plural, one {เหรียญตรา # ชิ้น} other {เหรียญตรา # ชิ้น}}'
+      badges_tab: เหรียญตรา
+      badges_title: 'เหรียญตราของ {username}'
       cancel: ยกเลิก
-      earned_on: วันที่
-      favorite_badge: badge
-      hidden_badge: profile
-      hide_badge: ซ่อน
-      load_more: เพิ่มเติม
-      manually_awarded: ทั้งหมด
-      no_badges: ผู้ใช้
-      no_badges_available: ไม่
-      recalculate: badge
-      recalculate_error: ล้มเหลว
+      earned_on: 'ได้รับเมื่อ {date}'
+      favorite_badge: เหรียญตราโปรด
+      hidden_badge: ถูกซ่อนจากโปรไฟล์
+      hide_badge: ซ่อนจากโปรไฟล์
+      load_more: โหลดเพิ่มเติม
+      manually_awarded: ได้รับจากการมอบให้โดยผู้ดูแลระบบ
+      no_badges: ผู้ใช้รายนี้ยังไม่ได้รับเหรียญตราใดๆ
+      no_badges_available: ไม่มีเหรียญตราให้เลือกในขณะนี้
+      recalculate: คำนวณเหรียญตราใหม่
+      recalculate_error: 'คำนวณเหรียญตราใหม่ล้มเหลว โปรดลองอีกครั้ง'
       recalculate_modal:
-        all_badges: badge
-        badge_label: badge
-        manual: ตามด้วยมือ
-        no_revoke_help: เปิดใช้งาน
-        no_revoke_label: ตกลง
-        reapply_actions_help: เพิ่ม
-        reapply_actions_label: ใช้
+        all_badges: เหรียญตราอัตโนมัติทั้งหมด
+        badge_label: เหรียญตราที่จะคำนวณใหม่
+        manual: มอบด้วยตนเอง
+        no_revoke_help: 'หากเปิดใช้งาน ผู้ใช้จะยังคงได้ครอบครองเหรียญตรานี้อยู่ถึงแม้จะไม่ตรงตามเงื่อนไขแล้วก็ตาม'
+        no_revoke_label: ไม่ต้องเพิกถอนเหรียญตราที่มีอยู่
+        reapply_actions_help: 'ใช้การดำเนินการของเหรียญตราซ้ำอีกครั้ง (เช่น การเพิ่มเข้ากลุ่ม) หากผู้ใช้ได้รับเหรียญตรานี้อยู่แล้ว'
+        reapply_actions_label: ใช้การดำเนินการซ้ำกับเหรียญตราที่มีอยู่
         submit: คำนวณใหม่
-        title: badge
-      recalculate_reapplied: badge
-      recalculate_success: ตกลง
-      remove_favorite: นำออก
-      revoke_badge: ตกลง
-      revoke_confirm: ตกลง
-      revoke_error: ตกลง
-      select_badge: เลือก
-      select_badge_label: เลือก
+        title: คำนวณเหรียญตราใหม่
+      recalculate_reapplied: 'ใช้การดำเนินการซ้ำสำหรับเหรียญตรา {reapplied} ชิ้น'
+      recalculate_success: 'คำนวณเหรียญตราใหม่สำเร็จ! มอบให้: {awarded}, เพิกถอน: {revoked}, ใช้การดำเนินการซ้ำ: {reapplied}'
+      remove_favorite: นำออกจากรายการโปรด
+      revoke_badge: เพิกถอนเหรียญตรา
+      revoke_confirm: 'คุณแน่ใจหรือไม่ว่าต้องการเพิกถอนเหรียญตรา "{badge}" จากผู้ใช้รายนี้?'
+      revoke_error: ไม่สามารถเพิกถอนเหรียญตราได้
+      select_badge: เลือกเหรียญตรา...
+      select_badge_label: เลือกเหรียญตรา
       set_favorite: ตั้งเป็นรายการโปรด
-      show_badge: แสดง
-      view_all_badges: ดู
+      show_badge: แสดงบนโปรไฟล์
+      view_all_badges: ดูเหรียญตราทั้งหมด
   lib:
-    rarity_common: Common
-    rarity_epic: Epic
-    rarity_explain: '{percent}% ของผู้ใช้มี badge นี้'
-    rarity_legendary: Legendary
-    rarity_rare: Rare
-    rarity_uncommon: Uncommon
+    rarity_common: 'ทั่วไป (Common)'
+    rarity_epic: 'มหากาพย์ (Epic)'
+    rarity_explain: 'ผู้ใช้จำนวน {percent}% ได้ครอบครองเหรียญตรานี้'
+    rarity_legendary: 'ระดับตำนาน (Legendary)'
+    rarity_rare: 'หายาก (Rare)'
+    rarity_uncommon: 'ไม่ธรรมดา (Uncommon)'

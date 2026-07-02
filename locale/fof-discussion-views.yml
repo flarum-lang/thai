@@ -6,17 +6,17 @@ core:
   forum:
     index_sort:
       popular_button: ยอดนิยม
-      unpopular_button: ไม่เป็นที่นิยม
+      unpopular_button: ยอดเข้าชมน้อยที่สุด
 fof-discussion-views:
   admin:
     permissions:
-      reset_views_label: ตั้งจำนวนการดูโพสต์
+      reset_views_label: กำหนดจำนวนยอดเข้าชมโพสต์
     settings:
-      ignore_crawlers: 'ไม่นับการเข้าชมจาก Crawler'
+      ignore_crawlers: 'ไม่นับการเข้าชมจากบอทเก็บข้อมูล (Crawler)'
   forum:
     discussion_controls:
-      resetviews_button: ตั้งจำนวนการดู
+      resetviews_button: กำหนดจำนวนยอดเข้าชม
     modal_resetviews:
-      label: ตั้งจำนวนการดูเป็น
-      submit: ยืนยัน
-      title: รีเซ็ตจำนวนการดูโพสต์
+      label: กำหนดจำนวนยอดเข้าชมเป็น
+      submit: ส่งข้อมูล
+      title: รีเซ็ตจำนวนยอดเข้าชมโพสต์
