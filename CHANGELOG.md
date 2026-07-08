@@ -133,6 +133,7 @@ CHANGELOG
 * [`huseyinfiliz/flarum-diff`](https://github.com/huseyinfiliz/flarum-diff)
 * [`huseyinfiliz/leaderboard`](https://github.com/huseyinfiliz/leaderboard)
 * [`huseyinfiliz/modern-footer`](https://github.com/huseyinfiliz/modern-footer)
+* [`huseyinfiliz/notificationhub`](https://github.com/huseyinfiliz/notificationhub)
 * [`huseyinfiliz/sticky-title`](https://github.com/huseyinfiliz/sticky-title)
 * [`ianm/boring-avatars`](https://github.com/imorland/flarum-ext-boring-avatars)
 * [`ianm/follow-users`](https://github.com/imorland/follow-users)
