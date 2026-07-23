@@ -60,6 +60,7 @@ CHANGELOG
 * [`fof/badges`](https://github.com/FriendsOfFlarum/badges)
 * [`fof/ban-ips`](https://github.com/FriendsOfFlarum/ban-ips)
 * [`fof/best-answer`](https://github.com/FriendsOfFlarum/best-answer)
+* [`fof/blog`](https://github.com/FriendsOfFlarum/blog)
 * [`fof/byobu`](https://github.com/FriendsOfFlarum/byobu)
 * [`fof/categories`](https://github.com/FriendsOfFlarum/categories)
 * [`fof/checklist`](https://github.com/FriendsOfFlarum/checklist)
