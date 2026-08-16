@@ -73,6 +73,7 @@ CHANGELOG
 * [`fof/disposable-emails`](https://github.com/FriendsOfFlarum/disposable-emails)
 * [`fof/doorman`](https://github.com/FriendsOfFlarum/doorman)
 * [`fof/drafts`](https://github.com/FriendsOfFlarum/drafts)
+* [`fof/filter`](https://github.com/FriendsOfFlarum/filter)
 * [`fof/follow-tags`](https://github.com/FriendsOfFlarum/follow-tags)
 * [`fof/formatting`](https://github.com/FriendsOfFlarum/formatting)
 * [`fof/forum-statistics-widget`](https://github.com/FriendsOfFlarum/forum-statistics-widget)
