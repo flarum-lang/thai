@@ -35,6 +35,7 @@ CHANGELOG
 * [`ekumanov/flarum-ext-inline-audio`](https://github.com/ekumanov/flarum-ext-inline-audio)
 * [`ekumanov/flarum-ext-new-posts-notice`](https://github.com/ekumanov/flarum-ext-new-posts-notice)
 * [`ernestdefoe/aurora`](https://github.com/ernestdefoe/aurora)
+* [`ffans/geetest`](https://github.com/FFans/geetest)
 * [`flarum/akismet`](https://github.com/flarum/akismet)
 * [`flarum/approval`](https://github.com/flarum/approval)
 * [`flarum/audit`](https://github.com/flarum/audit)
