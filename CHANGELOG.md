@@ -22,6 +22,7 @@ CHANGELOG
 * [`datlechin/flarum-birthdays`](https://github.com/datlechin/flarum-birthdays)
 * [`datlechin/flarum-copy-links`](https://github.com/datlechin/flarum-copy-links)
 * [`datlechin/flarum-discussion-overview`](https://github.com/datlechin/flarum-discussion-overview)
+* [`datlechin/flarum-keyboard-shortcuts`](https://github.com/datlechin/flarum-keyboard-shortcuts)
 * [`datlechin/flarum-link-preview`](https://github.com/datlechin/flarum-link-preview)
 * [`datlechin/flarum-more-discussions`](https://github.com/datlechin/flarum-more-discussions)
 * [`datlechin/flarum-passkey`](https://github.com/datlechin/flarum-passkey)
