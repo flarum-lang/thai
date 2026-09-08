@@ -16,5 +16,4 @@ flectar-turnstile:
     not_loaded_error: รีเฟรช
     validation_error: ทั้งหมด
 validation:
-  required: ทั้งหมด
   turnstile: รีเฟรช
