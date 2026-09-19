@@ -7,10 +7,10 @@ huoxin-filter-rule-manager:
     active: Active
     add_ruleset: 'เพิ่ม Ruleset'
     cancel: ยกเลิก
-    config_patterns_help: 'หนึ่ง pattern ต่อบรรทัด Pattern เปล่าจะ match แบบไม่แยกตัวพิมพ์ใหญ่เล็ก ใช้รูปแบบ PCRE เช่น /pattern/flags เพื่อควบคุมเต็มที่ คำแรกที่ตรงกันใช้ได้เป็น {{matched_pattern}} และ {{matched_string}}'
+    config_patterns_help: 'หนึ่ง pattern ต่อบรรทัด Pattern เปล่าจะ match แบบไม่แยกตัวพิมพ์ใหญ่เล็ก ใช้รูปแบบ PCRE เช่น /pattern/flags เพื่อควบคุมเต็มที่ คำแรกที่ตรงกันใช้ได้เป็น ''{{ matched_pattern }}'' และ ''{{ matched_string }}'''
     config_patterns_label: 'Regex patterns'
-    config_patterns_placeholder: "https?://(bit\\.ly|tinyurl)/\n^[A-Z\\s!]{20,}$"
-    config_words_help: 'หนึ่งคำหรือวลีต่อบรรทัด กฎจะ trigger หากโพสต์มีคำใดคำหนึ่ง (ไม่แยกตัวพิมพ์ใหญ่เล็ก) คำแรกที่ตรงกันใช้ได้เป็น {{matched_word}} ในข้อความแจ้งเตือน'
+    config_patterns_placeholder: "https?://(bit\\.ly|tinyurl)/\n^[A-Z\\s!]'{20,}'$"
+    config_words_help: 'หนึ่งคำหรือวลีต่อบรรทัด กฎจะ trigger หากโพสต์มีคำใดคำหนึ่ง (ไม่แยกตัวพิมพ์ใหญ่เล็ก) คำแรกที่ตรงกันใช้ได้เป็น ''{{ matched_word }}'' ในข้อความแจ้งเตือน'
     config_words_label: 'คำ / วลี'
     config_words_placeholder: "spam\nphishing\ngiveaway"
     delete: ลบ
@@ -63,7 +63,7 @@ huoxin-filter-rule-manager:
       warning_help: 'คำใบ้แบบ real-time ขณะพิมพ์ ต้องให้ผู้ใช้ยืนยันก่อนส่งโพสต์'
     keep_editing: แก้ไขต่อ
     load_error: 'ไม่สามารถโหลดข้อมูล filter rule ได้'
-    message_help: 'ใช้ {{token}} เพื่อแทรกค่าที่ได้จากกฎ ค่า Token จะถูก escape HTML อัตโนมัติ template เองใช้งานได้เต็มที่ สามารถใช้ HTML อย่างง่ายเช่น <br>'
+    message_help: 'ใช้ ''{{ token }}'' เพื่อแทรกค่าที่ได้จากกฎ ค่า Token จะถูก escape HTML อัตโนมัติ template เองใช้งานได้เต็มที่ สามารถใช้ HTML อย่างง่ายเช่น <br>'
     move_down: เลื่อนลง
     move_up: เลื่อนขึ้น
     no_providers: 'ไม่มี rule provider ที่ลงทะเบียน ติดตั้งหรือเปิดใช้ extension provider เพื่อเพิ่มประเภทกฎ'
@@ -125,11 +125,11 @@ huoxin-filter-rule-manager:
     ruleset_evasion_timeout_help: 'ระยะเวลาที่ผู้ใช้อยู่ใน evasion หลังจาก trigger block ของ Ruleset นี้'
     ruleset_flag_message: 'เหตุผล Flag/Approval กำหนดเอง'
     ruleset_flag_message_help: 'ไม่บังคับ กำหนดข้อความเหตุผล flag หรือ approval กำหนดเองให้ moderator เห็นเมื่อ Ruleset นี้ trigger หากว่างจะใช้ข้อความกลุ่มเริ่มต้น'
-    ruleset_flag_message_placeholder: 'เช่น คำที่ตรงกัน: {{matched_word}}'
+    ruleset_flag_message_placeholder: 'เช่น คำที่ตรงกัน: ''{{ matched_word }}'''
     ruleset_intervention_type: Intervention
     ruleset_is_active: เปิดใช้งาน
     ruleset_message: ข้อความ
-    ruleset_message_placeholder: 'โพสต์ของคุณมีคำที่ถูกจำกัด: {{matched_word}}'
+    ruleset_message_placeholder: 'โพสต์ของคุณมีคำที่ถูกจำกัด: ''{{ matched_word }}'''
     ruleset_name: ชื่อ
     ruleset_name_placeholder: 'เช่น Block spam keywords'
     ruleset_no_icon: ไม่มี
