@@ -3,21 +3,6 @@
 # You can read more about the process at https://github.com/rob006-software/flarum-translations/wiki.
 
 flarum-nicknames:
-  admin:
-    permissions:
-      edit_own_nickname_label: แก้ไข
-    settings:
-      max_label: ชื่อ
-      min_label: ชื่อ
-      random_username_help: ซ่อน
-      random_username_label: ชื่อ
-      regex_help: ชื่อ
-      regex_label: 'regular expression for validation'
-      set_on_registration_label: ชื่อ
-      unique_label: ชื่อ
-    wrong_driver: เลือก
-  api:
-    invalid_nickname_message: ชื่อ
   forum:
     change_nickname:
       submit_button: '=> core.ref.save_changes'
@@ -29,6 +14,3 @@ flarum-nicknames:
       change_nickname_button: '=> flarum-nicknames.ref.change_nickname'
     sign_up:
       nickname_placeholder: '=> flarum-nicknames.ref.nickname'
-  ref:
-    change_nickname: ชื่อ
-    nickname: ชื่อ

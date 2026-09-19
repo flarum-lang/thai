@@ -210,8 +210,6 @@ huseyinfiliz-traderfeedback:
       type_negative: ไม่ดี
       type_neutral: เป็นกลาง
       type_positive: ดี
-    nav:
-      feedback_link: ย้อนกลับ
     notifications:
       feedback_approved_title: 'ความเห็นของคุณถึง {username} ได้รับการอนุมัติ'
       feedback_rejected_title: 'ความเห็นของคุณถึง {username} ถูกปฏิเสธ'

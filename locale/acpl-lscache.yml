@@ -6,7 +6,7 @@ acpl-lscache:
   admin:
     cache_enabled_help: 'ดู <a>หน้าข้อมูล</a> สำหรับวิธีทดสอบแคช หมายเหตุ: เมื่อปิดใช้งานแคช รายการแคชทั้งหมดของเว็บไซต์จะถูกล้างออก'
     cache_enabled_label: 'เปิดใช้งาน LSCache'
-    cache_exclude_help: 'เส้นทางที่มีสตริงเหล่านี้จะไม่ถูกแคช เช่น <code>/mypath/mypage?aa=bb</code> ใส่ <code>^</code> นำหน้าเพื่อจับจุดเริ่มต้น ใส่ <code>$</code> ท้าย URL เพื่อจับแบบตรงทั้งหมด หนึ่งรายการต่อบรรทัด'
+    cache_exclude_help: 'เส้นทางที่มีสตริงเหล่านี้จะไม่ถูกแคช ตัวอย่าง <code>/mypath/mypage?aa=bb</code> คุณสามารถใช้ <code>mypage?aa=</code> ได้ หากต้องการให้ตรงกับจุดเริ่มต้น ให้เพิ่ม <code>^</code> ที่จุดเริ่มต้น หากต้องการให้ตรงกัน ให้เพิ่ม <code>$</code> ที่ส่วนท้ายของ URL หนึ่งรายการต่อบรรทัด'
     cache_exclude_label: เส้นทางที่ไม่แคช
     clearing_cache_listener_label: 'ล้าง LSCache เมื่อล้างแคช Flarum'
     drop_qs_help: "ใช้ฟีเจอร์นี้เพื่อตัด query string เฉพาะ เช่น <code>fbclid</code> หรือ <code>utm*</code> เมื่อแคช ต้องใช้ LSWS v5.2.3 หรือใหม่กว่า ระบุ query string ที่จะตัด หนึ่งรายการต่อบรรทัด <a>เรียนรู้เพิ่มเติม</a><br></br>\n⚠️ การตั้งค่านี้จะแก้ไขไฟล์ .htaccess\n"

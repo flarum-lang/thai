@@ -6,14 +6,5 @@ flectar-turnstile:
   admin:
     settings:
       forgot: '=> core.forum.forgot_password.title'
-      help_text: บัญชี
-      secret_key: 'secret key'
       signin: '=> core.forum.log_in.title'
       signup: '=> core.forum.sign_up.title'
-      site_key: 'site key'
-  forum:
-    error: ยืนยัน
-    not_loaded_error: รีเฟรช
-    validation_error: ทั้งหมด
-validation:
-  turnstile: รีเฟรช
