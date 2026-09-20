@@ -7,8 +7,6 @@ flarum-gdpr:
     data:
       followuser:
         anonymize_description: '=> flarum-gdpr.lib.data.followuser.delete_description'
-        delete_description: ลบ
-        export_description: ส่งออก
 ianm-follow-users:
   admin:
     permissions:
