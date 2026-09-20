@@ -146,7 +146,6 @@ CHANGELOG
 * [`ianm/boring-avatars`](https://github.com/imorland/flarum-ext-boring-avatars)
 * [`ianm/follow-users`](https://github.com/imorland/follow-users)
 * [`ianm/html-head`](https://github.com/imorland/html-head)
-* [`ianm/log-viewer`](https://github.com/imorland/flarum-ext-log-viewer)
 * [`ianm/oauth-reddit`](https://github.com/imorland/flarum-ext-oauth-reddit)
 * [`ianm/online-guests`](https://github.com/imorland/flarum-ext-online-guests-widget)
 * [`ianm/syndication`](https://github.com/imorland/syndication)
