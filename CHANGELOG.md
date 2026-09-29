@@ -234,7 +234,7 @@ CHANGELOG
 * [`fof/move-posts`](https://github.com/FriendsOfFlarum/move-posts) (100% complete)
 * [`fof/news-widget`](https://github.com/FriendsOfFlarum/news-widget) (100% complete)
 * [`fof/nightmode`](https://github.com/FriendsOfFlarum/nightmode) (100% complete)
-* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (100% complete)
+* [`fof/oauth`](https://github.com/FriendsOfFlarum/oauth) (96% complete)
 * [`fof/online-users-widget`](https://github.com/FriendsOfFlarum/online-users-widget) (100% complete)
 * [`fof/open-collective`](https://github.com/FriendsOfFlarum/open-collective) (100% complete)
 * [`fof/pages`](https://github.com/FriendsOfFlarum/pages) (100% complete)
