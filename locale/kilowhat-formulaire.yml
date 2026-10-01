@@ -153,8 +153,6 @@ kilowhat-formulaire:
       option-keys: 'ส่งออกคีย์ตัวเลือกแทนชื่อ สำหรับ checkboxes, radio และ select'
       preview: ตัวอย่าง
       preview-primitives:
-        boolean-false: false
-        boolean-true: true
         excel-date: '(EXCEL DATE)'
       submit: ดาวน์โหลด
       title: ส่งออกการส่ง
