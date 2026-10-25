@@ -14,6 +14,11 @@ CHANGELOG
 * [`ianm/gravatar`](https://github.com/imorland/gravatar) (100% complete)
 
 
+**Updated translations for extensions**:
+
+* [`huoxin/filter-rule-manager`](https://github.com/huoxin233/flarum-ext-filter-rule-manager) (2 changed, 65% complete)
+
+
 All changes: [2.0.1...2.0.2](https://github.com/flarum-lang/thai/compare/2.0.1...2.0.2).
 
 
