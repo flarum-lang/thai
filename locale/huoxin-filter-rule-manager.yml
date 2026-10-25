@@ -63,7 +63,7 @@ huoxin-filter-rule-manager:
       warning_help: 'คำใบ้แบบ real-time ขณะพิมพ์ ต้องให้ผู้ใช้ยืนยันก่อนส่งโพสต์'
     keep_editing: แก้ไขต่อ
     load_error: 'ไม่สามารถโหลดข้อมูล filter rule ได้'
-    message_help: 'ใช้ ''{{ token }}'' เพื่อแทรกค่าที่ได้จากกฎ ค่า Token จะถูก escape HTML อัตโนมัติ template เองใช้งานได้เต็มที่ สามารถใช้ HTML อย่างง่ายเช่น <br>'
+    message_help: 'ใช้ ''{{ token }}'' เพื่อแทรกค่าที่ได้จากกฎ ค่า Token จะถูก escape HTML อัตโนมัติ template เองใช้งานได้เต็มที่ สามารถใช้ HTML อย่างง่ายเช่น ''<br>'''
     move_down: เลื่อนลง
     move_up: เลื่อนขึ้น
     no_providers: 'ไม่มี rule provider ที่ลงทะเบียน ติดตั้งหรือเปิดใช้ extension provider เพื่อเพิ่มประเภทกฎ'
@@ -198,7 +198,7 @@ huoxin-filter-rule-manager:
       name_required: 'โปรดตั้งชื่อให้ Ruleset'
       tags_required: 'เลือก scope เป็น tag — ระบุ tag ID อย่างน้อยหนึ่งตัว'
   forum:
-    evasion_flag_message: 'น่าสงสัย: ผู้ใช้เพิ่งถูก block โดย Ruleset ''{ruleset}'' แล้วส่งโพสต์นี้ผ่านได้ โปรดตรวจสอบการหลีกเลี่ยงกฎ filter'
+    evasion_flag_message: 'น่าสงสัย: ผู้ใช้เพิ่งถูก block โดย Ruleset "{ruleset}" ({count_formatted}) แล้วส่งโพสต์นี้ผ่านได้ โปรดตรวจสอบการหลีกเลี่ยงกฎ filter{details}'
     flag_message: 'Auto-flag โดย Filter Rule Manager Ruleset ที่ trigger: {rulesets}'
     flagger_name: 'Filter Rule Manager'
     modal_ok: ตกลง
