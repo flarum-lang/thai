@@ -2,6 +2,18 @@ CHANGELOG
 =========
 
 
+2.0.3 (XXXX-XX-XX)
+------------------
+
+**Added support for new extensions**:
+
+* [`huseyinfiliz/bump`](https://github.com/huseyinfiliz/bump) (100% complete)
+* [`huseyinfiliz/pickem`](https://github.com/huseyinfiliz/pickem) (100% complete)
+
+
+All changes: [2.0.2...2.0.3](https://github.com/flarum-lang/thai/compare/2.0.2...2.0.3).
+
+
 2.0.2 (2026-10-26)
 ------------------
 
